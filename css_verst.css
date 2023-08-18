@@ -122,17 +122,14 @@ header{
     background-color: burlywood;
 }
 .image_case{
-    display: flex;
     margin: 15px;
     width: 350px;
     height: 520px;
     background-color: white;
 }
 [class^='slideButton_case_']{
-    position: absolute;
     z-index: 2;
-    height: 56.8%;
-    width: 70px;
+    height: 100%;
     background-color: black;
 }
 .slideButton_case_left{
@@ -141,11 +138,11 @@ header{
 }
 .slideButton_case_right{
     opacity: 0.2;
-    margin-left: 245px;
     cursor: pointer;
 }
 .image{
-    position: relative;
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
     z-index: 1;
     height: 100%;
     width: 100%;
