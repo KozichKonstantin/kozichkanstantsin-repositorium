@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+}
+.block_1{
+    height: 7em;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+.block_2{
+    height: 90%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(102, 99, 102);
+}
+.name_case{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.name_text{
+    
+    justify-content: center;
+    align-items: center;
+}
+.name_text > h1{
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.name_text > h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo_case{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10%;
+}
+.logo{
+    margin-right: 20px;
+    margin-top: -0.6em;
+   border-radius: 7px; 
+   cursor: pointer;
+   background-color: rgb(40, 40, 40);
+}
+.main_info{
+    width: 100%;
+    height: 100%;
+}
+.main_info_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(151, 148, 132);
+}
+.cards_grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 10em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px 600px 600px 600px;
+}
+[class^="card"]{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+.card1{
+    display: flex;
+    background-color:burlywood;
+}
+.card2{
+    display: flex;
+    background-color: burlywood;
+}
+.card3{
+    display: flex;
+    background-color: burlywood;
+}
+.card4{
+    display: flex;
+    background-color: burlywood;
+}
+.card5{
+    display: flex;
+    background-color: burlywood;
+}
+.card6{
+    display: flex;
+    background-color: burlywood;
+}
+.card7{
+    display: flex;
+    background-color: burlywood;
+}
+.card8{
+    display: flex;
+    background-color: burlywood;
+}
+.image_case{
+    display: flex;
+    margin: 15px;
+    width: 350px;
+    height: 520px;
+    background-color: white;
+}
+[class^='slideButton_case_']{
+    position: absolute;
+    z-index: 2;
+    height: 56.8%;
+    width: 10%;
+    background-color: black;
+}
+.slideButton_case_left{
+    opacity: 0.2;
+    cursor: pointer;
+}
+.slideButton_case_right{
+    opacity: 0.2;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.image{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+.specs{
+    width: 40%;
+    height: 100%;
+}
+.specs_text > li{
+    margin-bottom: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.generate_case{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.generate{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: gold;
+    cursor: pointer;
+}
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(230, 72, 72);
+}
