@@ -128,17 +128,16 @@ header{
     background-color: white;
 }
 [class^='slideButton_case_']{
-    z-index: 2;
     height: 100%;
-    background-color: black;
-}
-.slideButton_case_left{
-    opacity: 0.2;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.4;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.slideButton_case_right{
-    opacity: 0.2;
-    cursor: pointer;
+.slideButton_case_left , .slideButton_case_right  > p{
+    font-size: 150px;
 }
 .image{
     display: grid;
