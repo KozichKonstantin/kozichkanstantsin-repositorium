@@ -23,3 +23,4 @@ const slider = document.querySelector('.image barbarian'),
 leftButton.addEventListener('click', function prevSlide() {
     document.getElementsByClassName('.image').style.backgroundColor = black;
 })
+//hell
