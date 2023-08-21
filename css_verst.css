@@ -5,7 +5,7 @@ body{
     width: 100%;
 }
 .block_1{
-    height: 7em;
+    height: 9em;
     width: 100%;
     position: fixed;
     z-index: 3;
@@ -34,7 +34,8 @@ header{
     align-items: center;
 }
 .name_text{
-    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -176,6 +177,7 @@ header{
 .specs{
     width: 40%;
     height: 100%;
+    margin: 15px;
 }
 .specs_text > li{
     list-style-type: none;
