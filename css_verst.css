@@ -176,6 +176,7 @@ header{
 .specs{
     width: 40%;
     height: 100%;
+    margin: 15px;
 }
 .specs_text > li{
     list-style-type: none;
