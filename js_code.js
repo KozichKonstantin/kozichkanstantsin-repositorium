@@ -59,15 +59,46 @@ const data = [
       "count": "6"
     }
   ]
-
+// for(i=0; i<8; i++){
+//     let picture = data[i]['img']
+// }
+// for(i=1; i< data[0]['count']; i++){
+//     picture = picture + '/' + number;
+// }
+var number = 1;
+var picture = data[0]['img'] + '/' + number
 const slider = document.querySelector('.image barbarian'),
     leftButton = document.querySelector( '.slideButton_case_left'),
     rightButton = document.querySelector('.slideButton_case_right')
 leftButton.addEventListener('click', function prevSlide() {
     var slider = document.getElementsByClassName("image barbarian")[0]
-    slider.style.backgroundImage = "url(https://s.mediasole.ru/images/724/724554/1.jpg)";
+    number = number -1;
+    if(number>= 1){
+        pictureFill = picture.slice(0, -1);
+        pictureFill = 'url' + '(' + pictureFill + number + '.jpg' + ')';
+        slider.style.backgroundImage = pictureFill;
+        console.log(pictureFill)
+    }
+    else{
+        console.log('error')
+        number++;
+        console.log(number)
+        console.log(pictureFill)
+    }
 })
 rightButton.addEventListener('click', function nextSlide() {
     var slider = document.getElementsByClassName("image barbarian")[0]
-    slider.style.backgroundImage = "url(https://static.mk.ru/upload/iblock_mk/475/05/c5/96/DETAIL_PICTURE_732441_86611478.jpg)";
+    number = number + 1;
+    if(number< data[0]['count']){
+        pictureFill = picture.slice(0, -1);
+        pictureFill = 'url' + '(' + pictureFill + number + '.jpg' + ')';
+        slider.style.backgroundImage = pictureFill;
+        console.log(pictureFill)
+    }
+    else{
+        console.log('error')
+        number--;
+        console.log(number)
+        console.log(pictureFill)
+    }
 })

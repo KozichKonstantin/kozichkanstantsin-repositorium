@@ -5,7 +5,7 @@ body{
     width: 100%;
 }
 .block_1{
-    height: 9em;
+    height: 7em;
     width: 100%;
     position: fixed;
     z-index: 3;
@@ -34,8 +34,7 @@ header{
     align-items: center;
 }
 .name_text{
-    display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
 }
@@ -171,13 +170,12 @@ header{
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-image: url(https://static.mk.ru/upload/iblock_mk/475/05/c5/96/DETAIL_PICTURE_732441_86611478.jpg);
+    background-image: url(data/grid_cards/barbarian/1.jpg);
     /* background-color: pink; */
 }
 .specs{
     width: 40%;
     height: 100%;
-    margin: 15px;
 }
 .specs_text > li{
     list-style-type: none;
