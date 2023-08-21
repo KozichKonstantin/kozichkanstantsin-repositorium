@@ -17,9 +17,15 @@
 //       }
 //     }
 //   });
-const slider = document.querySelector('.image barbarian'),
-    leftButton = document.querySelectorAll( '.slideButton_case_left'),
-    rightButton = document.querySelectorAll('.slideButton_case_right')
+const leftButton = document.querySelector( '.slideButton_case_left')
+const rightButton = document.querySelector( '.slideButton_case_right')
+
 leftButton.addEventListener('click', function prevSlide() {
-    document.getElementsByClassName('.image').style.backgroundColor = black;
+    var slider = document.getElementsByClassName("image barbarian")[0]
+    slider.style.backgroundImage = "url(https://s.mediasole.ru/images/724/724554/1.jpg)";
 })
+rightButton.addEventListener('click', function nextSlide() {
+    var slider = document.getElementsByClassName("image barbarian")[0]
+    slider.style.backgroundImage = "url(https://static.mk.ru/upload/iblock_mk/475/05/c5/96/DETAIL_PICTURE_732441_86611478.jpg)";
+})
+// url(https://s.mediasole.ru/images/724/724554/1.jpg)

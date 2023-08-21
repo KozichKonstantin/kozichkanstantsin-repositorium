@@ -170,7 +170,8 @@ header{
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-color: pink;
+    background-image: url(https://static.mk.ru/upload/iblock_mk/475/05/c5/96/DETAIL_PICTURE_732441_86611478.jpg);
+    /* background-color: pink; */
 }
 .specs{
     width: 40%;
