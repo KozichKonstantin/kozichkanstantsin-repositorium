@@ -61,7 +61,35 @@ const data = [
     }
   ]
 
+  const input  = document.querySelector('input');
+   const button = document.querySelector('#button');
+const generate = document.querySelector('.generate');
 
+console.log('Привет от JavaScript!')
+  
+change = function () {
+ 
+   
+   button.addEventListener('click', function() {
+   
+   
+ 
+}
+   )
+}
+
+
+
+generate.addEventListener('click', function() {
+input.value = +input.value + 1;
+
+console.log(input.value);
+})
+
+
+
+
+ 
 
 
 
