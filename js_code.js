@@ -61,8 +61,8 @@ const data = [
   ]
 
 const slider = document.querySelector('.image barbarian'),
-    leftButton = document.querySelectorAll( '.slideButton_case_left'),
-    rightButton = document.querySelectorAll('.slideButton_case_right')
+    leftButton = document.querySelector( '.slideButton_case_left'),
+    rightButton = document.querySelector('.slideButton_case_right')
 leftButton.addEventListener('click', function prevSlide() {
     var slider = document.getElementsByClassName("image barbarian")[0]
     slider.style.backgroundImage = "url(https://s.mediasole.ru/images/724/724554/1.jpg)";
