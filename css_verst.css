@@ -149,7 +149,6 @@ header{
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
-
 [class^='slideButton_case']:hover{
     opacity: 0.4;
 }
@@ -171,8 +170,6 @@ header{
     z-index: 1;
     height: 100%;
     width: 100%;
-    background-image: url(data/grid_cards/barbarian/1.jpg);
-    /* background-color: pink; */
 }
 .specs{
     width: 40%;

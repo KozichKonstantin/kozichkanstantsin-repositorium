@@ -20,13 +20,13 @@
 
 
   let generates = document.getElementsByClassName('generate');
-    for(let k = 0; k<generates.length; k++){
+    for(let k = 0; k < generates.length; k++){
       generates[k].addEventListener('click', function() {
         const generate = generates[k];
     for (let i = 0; i < 6; i++) {
-      gensrav = generate.parentNode.className.toString().slice(14, (generate.length));
-    if (gensrav == "barbarianSpec" || gensrav == "wizardSpec" || gensrav == "witchSpec" || gensrav == "spySpec" || gensrav == "paladinSpec" || gensrav == "monachSpec" || gensrav == "druidSpec" || gensrav == "bardSpec"){
-      let input =  document.querySelectorAll(('.'+ gensrav));
+      genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
+    if (genSrav == "barbarianSpec" || genSrav == "wizardSpec" || genSrav == "witchSpec" || genSrav == "spySpec" || genSrav == "paladinSpec" || genSrav == "monachSpec" || genSrav == "druidSpec" || genSrav == "bardSpec"){
+      let input =  document.querySelectorAll(('.'+ genSrav));
       input[i].value = Math.floor((Math.random() * 20 )+ 1);
     }
   }
