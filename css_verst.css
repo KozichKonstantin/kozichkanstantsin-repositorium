@@ -47,6 +47,7 @@ header{
     margin-bottom: 0;
 }
 .name_text > h2{
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
     margin-top: -10px;
@@ -176,6 +177,7 @@ header{
 .specs{
     width: 40%;
     height: 100%;
+    margin-top: 15px
 }
 .specs_text > li{
     list-style-type: none;

@@ -66,10 +66,12 @@ const data = [
 //     picture = picture + '/' + number;
 // }
 var number = 1;
+for(i=0; i<8; i++){
+    var picture = data[i]['img'] + '/' + number
+}
 var picture = data[0]['img'] + '/' + number
-const slider = document.querySelector('.image barbarian'),
-    leftButton = document.querySelector( '.slideButton_case_left'),
-    rightButton = document.querySelector('.slideButton_case_right')
+const   leftButton = document.querySelector( '.slideButton_case_left'),
+        rightButton = document.querySelector('.slideButton_case_right')
 leftButton.addEventListener('click', function prevSlide() {
     var slider = document.getElementsByClassName("image barbarian")[0]
     number = number -1;
