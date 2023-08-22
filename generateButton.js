@@ -32,3 +32,25 @@
   }
 })
 }
+
+let bt_minus = document.getElementsByClassName('bt_minus');
+    for(let j = 0; j<bt_minus.length; j++){
+      bt_minus[j].addEventListener('click', function() {
+        if(bt_minus[j].nextElementSibling.value == 1){
+        }
+        else{
+          bt_minus[j].nextElementSibling.value = bt_minus[j].nextElementSibling.value - 1 ;
+        }
+    })
+  }
+
+  let bt_plus = document.getElementsByClassName('bt_plus');
+    for(let l= 0; l<bt_plus.length; l++){
+      bt_plus[l].addEventListener('click', function() {
+        if(bt_plus[l].previousElementSibling.value == 20){
+        }
+        else{
+          bt_plus[l].previousElementSibling.value = bt_plus[l].previousElementSibling.value - (-1) ;
+        }
+    })
+  }

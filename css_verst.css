@@ -99,38 +99,11 @@ header{
     margin-right: 5px;
     margin-bottom: 40px;
 }
-.card1{
+.card{
     display: flex;
     background-color:burlywood;
 }
-.card2{
-    display: flex;
-    background-color: burlywood;
-}
-.card3{
-    display: flex;
-    background-color: burlywood;
-}
-.card4{
-    display: flex;
-    background-color: burlywood;
-}
-.card5{
-    display: flex;
-    background-color: burlywood;
-}
-.card6{
-    display: flex;
-    background-color: burlywood;
-}
-.card7{
-    display: flex;
-    background-color: burlywood;
-}
-.card8{
-    display: flex;
-    background-color: burlywood;
-}
+
 .image_case{
     margin: 15px;
     width: 350px;
@@ -178,21 +151,81 @@ header{
 }
 .specs_text > li{
     list-style-type: none;
-    margin-bottom: 30.75px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.inputField{
+
+.quantity_inner * {
+    box-sizing: border-box;    
+}    
+.quantity_inner {
+    display: inline-flex;
+    border-radius: 26px;
+    border: 4px solid #337AB7;
     position: relative;
-    top:-25px;
+    background: #FFF;
+    z-index: 1;
+}        
+.quantity_inner .bt_minus,
+.quantity_inner .bt_plus,
+.quantity_inner .bt_buy,
+.quantity_inner .quantity {
+    height: 40px;
     width: 40px;
-    height: 25px;
-    border-radius: 30%;
-    background-color: aliceblue;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background: #FFF;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 26px;
 }
+.quantity_inner .bt_buy {
+    background: #337AB7;
+    width: 90px;
+    height: 48px;
+    position: absolute;
+    right: -70px;
+    top: -4px;
+    z-index: -1;
+    border-radius: 0 26px 26px 0;
+    border: 4px solid #337AB7;
+}
+.quantity_inner .quantity {
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+.quantity_inner .bt_minus svg,
+.quantity_inner .bt_plus svg,
+.quantity_inner .bt_buy svg {
+    stroke: #337AB7;
+    stroke-width: 4;
+    transition: 0.5s;
+    margin: 10px;
+    fill: none;
+    height: 20px;
+    width: 20px;
+}    
+.quantity_inner .bt_buy svg {
+    stroke: #BFE2FF;
+    position: relative;
+    left: 6px;
+}    
+.quantity_inner .bt_buy:hover svg {
+    stroke: #FFF;
+}
+.quantity_inner .bt_minus:hover svg,
+.quantity_inner .bt_plus:hover svg {
+    stroke: #000;
+}
+
 .generate_case{
     display: flex;
     /* justify-content: center; */
-    margin-top: -10px;
+    margin-top: 70px;
     width: 100%;
     height: 20%;
 }
