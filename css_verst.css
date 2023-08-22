@@ -99,38 +99,11 @@ header{
     margin-right: 5px;
     margin-bottom: 40px;
 }
-.card1{
+.card{
     display: flex;
     background-color:burlywood;
 }
-.card2{
-    display: flex;
-    background-color: burlywood;
-}
-.card3{
-    display: flex;
-    background-color: burlywood;
-}
-.card4{
-    display: flex;
-    background-color: burlywood;
-}
-.card5{
-    display: flex;
-    background-color: burlywood;
-}
-.card6{
-    display: flex;
-    background-color: burlywood;
-}
-.card7{
-    display: flex;
-    background-color: burlywood;
-}
-.card8{
-    display: flex;
-    background-color: burlywood;
-}
+
 .image_case{
     margin: 15px;
     width: 350px;
