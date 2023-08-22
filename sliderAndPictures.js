@@ -99,13 +99,13 @@ for(let i=0; i<leftButtonsMassiv.length; i++){
             console.log(pictureFill);
         }
         else{
-          console.log('error2')
+          console.log('errorOutOfRange')
           base[j]['currentPicture']++;
           console.log(pictureFill)
         }
       }
       else{
-        console.log('error1')
+        console.log('errorNoSuchClass')
       }
     }
   })
@@ -126,13 +126,13 @@ for(let i=0; i<rightButtonsMassiv.length; i++){
             console.log(pictureFill);
         }
         else{
-          console.log('error2')
+          console.log('errorOutOfRange')
           base[j]['currentPicture']--;
           console.log(pictureFill)
         }
       }
       else{
-        console.log('error1')
+        console.log('errorNoSuchClass')
       }
     }
   })
