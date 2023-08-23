@@ -132,17 +132,29 @@ header{
     font-size: 150px;
 }
 .slideButton_case_left{
+    z-index: 3;
     border-radius: 0px 120px 120px 0px;
 }
 .slideButton_case_right{
     border-radius: 120px 0px 0px 120px;
 }
 .image{
+    /* justify-content: space-between; */
     display: grid;
     grid-template-columns: calc(100%/5) calc(100%*0.6) calc(100%/5);
     z-index: 1;
     height: 100%;
     width: 100%;
+}
+.costil{
+
+    
+}
+.frame{
+    position: absolute;
+    width: 350px;
+    height: 520px;
+    margin-left: -70px;
 }
 .specs{
     width: 40%;
@@ -165,8 +177,6 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
-
-
 .quantity_inner * {
     box-sizing: border-box;    
 }    
