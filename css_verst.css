@@ -110,7 +110,7 @@ header{
     height: 520px;
     background-color: white;
 }
-[class^='slideButton_case_']{
+[class^='slideButton_case']{
 
     height: 100%;
     background-color: rgb(255, 255, 255);
@@ -122,13 +122,7 @@ header{
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
-[class^='slideButton_case']:hover{
-    opacity: 0.4;
-}
-/* .costil{
-    background-color: black;
-} */
-.slideButton_case_left , .slideButton_case_right  > p{
+.slideButton_case_left , .slideButton_case_right {
     font-size: 150px;
 }
 .slideButton_case_left{
@@ -137,6 +131,13 @@ header{
 .slideButton_case_right{
     border-radius: 120px 0px 0px 120px;
 }
+[class^='slideButton_case']:hover{
+    opacity: 0.4;
+}
+/* .costil{
+    background-color: black;
+} */
+
 .image{
     display: grid;
     grid-template-columns: calc(100%/5) calc(100%*0.6) calc(100%/5);

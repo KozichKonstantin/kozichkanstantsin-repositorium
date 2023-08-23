@@ -74,6 +74,7 @@ const base = [
 //     picture = picture + '/' + number;
 // }
 
+
 let leftButtonsMassiv = document.getElementsByClassName('slideButton_case_left')
 let rightButtonsMassiv = document.getElementsByClassName('slideButton_case_right')
 for(let i=0; i < leftButtonsMassiv.length; i++){
