@@ -33,7 +33,7 @@
 })
 }
 
-let bt_minus = document.getElementsByClassName('bt_minus');
+  let bt_minus = document.getElementsByClassName('bt_minus');
     for(let j = 0; j<bt_minus.length; j++){
       bt_minus[j].addEventListener('click', function() {
         if(bt_minus[j].nextElementSibling.value <= 1){
