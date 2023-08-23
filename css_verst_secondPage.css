@@ -1,0 +1,105 @@
+.infoSecondPage{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.topText{
+    margin-top: -1px;
+    width: 300px;
+    height: 80px;
+    background-color: rgb(230, 72, 72);
+    border-radius: 0 0 30% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px 0px rgb(0,0, 0, 0.3);
+}
+.lineDesign{
+    width: 80%;
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+
+}
+.savedList{
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    grid-template-rows: 600px;
+    width: 95%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+.savedCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 350px;
+    height: 520px;
+    background-color: burlywood;
+    border-radius: 30px;
+}
+.savedCardName{
+    margin: 5px;
+}
+.savedCardPicture{
+    margin: 5px;
+    width: 40%;
+    height: 35%;
+    
+}
+.savedCardPicture > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.savedCardSpecs{
+    display: grid;
+    width: 90%;
+    height: 27%;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-rows: calc(100%/2) calc(100%/2);
+    background-color: bisque;
+    border-radius: 20px;
+}
+.specText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 194, 168);
+    margin: 5px;
+    border-radius: 20px;
+}
+.specText > h2{
+    font-size: 16px;
+}
+.specText > p {
+    font-size: larger;
+}
+.activityButtons_case{
+    display: grid;
+    width: 90%;
+    height: 20%;
+    background-color: bisque;
+    margin-top: 5px;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    border-radius: 20px;
+}
+.activityButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 194, 168);
+    margin: 5px;
+    border-radius: 50%;
+}
+.activityButton > img{
+    width: 60%;
+    height: 60%;
+}

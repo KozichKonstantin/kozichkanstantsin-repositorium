@@ -67,12 +67,8 @@ const base = [
       "currentPicture": 1
     }
   ]
-// for(i=0; i<8; i++){
-//     let picture = base[i]['img']
-// }
-// for(i=1; i< base[0]['count']; i++){
-//     picture = picture + '/' + number;
-// }
+
+
 
 let leftButtonsMassiv = document.getElementsByClassName('slideButton_case_left')
 let rightButtonsMassiv = document.getElementsByClassName('slideButton_case_right')
@@ -137,70 +133,3 @@ for(let i=0; i<rightButtonsMassiv.length; i++){
     }
   })
 }
-
-
-
-
-// let leftButtonsMassiv = document.getElementsByClassName('slideButton_case_left')
-// let rightButtonsMassiv = document.getElementsByClassName('slideButton_case_right')
-// for(let i=0; i < leftButtonsMassiv.length; i++){
-//   var cardFirstImage = document.getElementsByClassName("image " + base[i]['name'])[0]
-//   cardFirstImage.style.backgroundImage = 'url' + '(' + base[i]['img'] + '/' + base[i]['currentPicture'] + '.jpg' + ')';
-//   console.log(i)
-// }
-// console.log(leftButtonsMassiv)
-
-// for(let i=0; i<leftButtonsMassiv.length; i++){
-//   leftButtonsMassiv[i].addEventListener('click', function() {
-//     const clickedLeftButton = leftButtonsMassiv[i];
-//     let buttonLeftSrav = clickedLeftButton.parentNode.className.toString().slice(6, (clickedLeftButton.length));
-//     for(let j=0; j < leftButtonsMassiv.length; j++){
-//       if(buttonLeftSrav == base[j]['name']){
-//         var picture = base[j]['img'] + '/' + base[j]['currentPicture'];
-//         base[j]['currentPicture'] = base[j]['currentPicture'] -1;
-//         if(base[j]['currentPicture']>= 1){
-//             pictureFill = picture.slice(0, -1);
-//             pictureFill = 'url' + '(' + pictureFill + base[j]['currentPicture'] + '.jpg' + ')';
-//             var slider = document.getElementsByClassName("image " + buttonLeftSrav)[0];
-//             slider.style.backgroundImage = pictureFill;
-//             console.log(pictureFill);
-//         }
-//         else{
-//           console.log('errorOutOfRange')
-//           base[j]['currentPicture']++;
-//           console.log(pictureFill)
-//         }
-//       }
-//       else{
-//         console.log('errorNoSuchClass')
-//       }
-//     }
-//   })
-// }
-// for(let i=0; i<rightButtonsMassiv.length; i++){
-//   rightButtonsMassiv[i].addEventListener('click', function() {
-//     const clickedRightButton = rightButtonsMassiv[i];
-//     let buttonRightSrav = clickedRightButton.parentNode.className.toString().slice(6, (clickedRightButton.length));
-//     for(let j=0; j < rightButtonsMassiv.length; j++){
-//       if(buttonRightSrav == base[j]['name']){
-//         var picture = base[j]['img'] + '/' + base[j]['currentPicture'];
-//         base[j]['currentPicture'] = base[j]['currentPicture'] +1;
-//         if(base[j]['currentPicture'] < base[j]['count']){
-//             pictureFill = picture.slice(0, -1);
-//             pictureFill = 'url' + '(' + pictureFill + base[j]['currentPicture'] + '.jpg' + ')';
-//             var slider = document.getElementsByClassName("image " + buttonRightSrav)[0];
-//             slider.style.backgroundImage = pictureFill;
-//             console.log(pictureFill);
-//         }
-//         else{
-//           console.log('errorOutOfRange')
-//           base[j]['currentPicture']--;
-//           console.log(pictureFill)
-//         }
-//       }
-//       else{
-//         console.log('errorNoSuchClass')
-//       }
-//     }
-//   })
-// }
