@@ -55,7 +55,6 @@ header{
 }
 .logo_case{
     display: flex;
-    height: 100%;
     width: 100%;
     position: absolute;
     justify-content: right;
@@ -117,7 +116,7 @@ header{
 }
 .savedList{
     display: grid;
-    grid-template-columns: 420px 420px 420px;
+    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);;
     grid-template-rows: 600px;
     width: 95%;
     height: 555px;
