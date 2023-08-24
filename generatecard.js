@@ -137,7 +137,7 @@ y =  document.querySelectorAll(".specs_text");
 for (let e = 0; e <y.length ; e++) d("div", `activityButton`, y[e]);
 
 let activityButton =  document.querySelectorAll(".activityButton");
-for (let e = 0; e <y.length ; e++) d("div", `generate_case ${data[e].name}spec`, activityButton[e]);
+for (let e = 0; e <y.length ; e++) d("div", `generate_case ${data[e].name}Spec`, activityButton[e]);
 
 y =  document.querySelectorAll(".generate_case");
 for (let e = 0; e <y.length ; e++) d("button", `generate`, y[e]);
