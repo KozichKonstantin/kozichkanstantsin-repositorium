@@ -117,7 +117,7 @@ header{
 }
 .savedList{
     display: grid;
-    grid-template-columns: 420px 420px 420px;
+    grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(100% / 4);;
     grid-template-rows: 600px;
     width: 95%;
     height: 555px;
@@ -153,10 +153,11 @@ header{
     display: grid;
     width: 90%;
     height: 27%;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-columns:  calc(100% / 3) calc(100% / 3) calc(100% / 3);
     grid-template-rows: calc(100%/2) calc(100%/2);
     background-color: bisque;
     border-radius: 20px;
+    justify-content: space-around;
 }
 .specText{
     display: flex;
@@ -171,7 +172,7 @@ header{
     font-size: 16px;
 }
 .specText > p {
-    font-size: larger;
+    font-size: 20px;
 }
 .activityButtons_case{
     display: grid;
@@ -179,7 +180,7 @@ header{
     height: 20%;
     background-color: bisque;
     margin-top: 5px;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-columns:calc(100% / 3) calc(100% / 3) calc(100% / 3);
     border-radius: 20px;
 }
 .activityButton{

@@ -103,6 +103,7 @@ header{
 .card{
     display: flex;
     background-color:burlywood;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .image_case{
@@ -155,7 +156,14 @@ header{
     margin-left: -70px;
     background-color: #FFF;
     border-radius: 30px;
-    -webkit-transition: all 0.5s ease;   /*добавить анимацию*/
+    animation-name: Appearance;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+       /*добавить анимацию*/
+}
+@-webkit-keyframes Appearance{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .specs{
     width: 40%;
