@@ -238,27 +238,45 @@ input[type="number"]:focus {
 .quantity_inner .bt_plus:hover svg {
     stroke: #000;
 }
-
+.activityButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+}
 .generate_case{
     display: flex;
-    /* justify-content: center; */
-    margin-top: 70px;
-    width: 100%;
     height: 20%;
+    margin-right: 10px;
 }
 .generate{
-    width: 130px;
+    width: 100px;
     height: 45px;
-    border-radius: 30%;
-    background-color: gold;
+    border-radius: 30px;
+    background-color: rgb(230, 72, 72);
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
 }
 .generate:hover{
-    background-color: rgb(227, 193, 0);
+    background-color: rgb(255, 181, 181);
 }
 .generate > p::after{
     content: "GENERATE";
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.saveHero {
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: rgb(230, 72, 72);
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+}
+.saveHero:hover{
+    background-color: rgb(255, 181, 181);
+}
+.saveHero > p::after{
+    content: "SAVE";
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 footer{
