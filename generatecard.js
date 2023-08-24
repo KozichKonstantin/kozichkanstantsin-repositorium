@@ -39,6 +39,10 @@ for (let e = 0; e <y.length ; e++) {
 }
 }
 for (let e = 0; e <images.length ; e++) d("div", `costil`, images[e]);
+
+y = document.querySelectorAll( ".costil");
+for (let e = 0; e <images.length ; e++) d("img", `frame ${data[e].name}`, y[e]);
+
 for (let e = 0; e <images.length ; e++) d("div", `slideButton_case_right`, images[e]);
 y = document.querySelectorAll(".slideButton_case_right");
 for (let e = 0; e <y.length ; e++) d("p", `right`, y[e]);
@@ -104,18 +108,7 @@ y =  document.querySelectorAll(".bt_minus");
 for (let e = 0; e <y.length ; e++) d("svg", `svgs`, y[e]);
 
 y =  document.querySelectorAll(".svgs");    
-for (let e = 0; e <y.length ; e++) d("line", `line_d`, y[e]);
-
-let line_d =  document.querySelectorAll(".line_d");  
-   
-for(let i = 0; i<y.length; i++){
-    line_d[i].setAttribute('x1', 5);
-    line_d[i].setAttribute('y1', 12);
-    line_d[i].setAttribute('x2', 19);
-    line_d[i].setAttribute('y2', 12);
-    }
- 
-
+for (let e = 0; e <y.length ; e++) d("line", `line_d`, y[e], "-");
 
 y =  document.querySelectorAll(".quantity_inner");
 for (let e = 0; e <y.length ; e++) d("button", `bt_plus`, y[e]);
@@ -130,29 +123,21 @@ svg[i].setAttribute('viewBox',"0 0 24 24");
 
 y = document.querySelectorAll('.svg');
 
-for (let e = 0; e <y.length ; e++) d("line", `line_up`, y[e]);
-for (let e = 0; e <y.length ; e++) d("line", `line_up2`, y[e]);
-let line_up =  document.querySelectorAll(".line_up"); 
-let line_up2 =  document.querySelectorAll(".line_up2"); 
+for (let e = 0; e <y.length ; e++) d("line", `line_up`, y[e], "+");
 
-for(let i = 0; i<line_up.length; i++){
-    line_up[i].setAttribute('x1', 12);
-    line_up[i].setAttribute('y1', 5);
-    line_up[i].setAttribute('x2', 12);
-    line_up[i].setAttribute('y2', 19);
-    line_up2[i].setAttribute('x1', 5);
-    line_up2[i].setAttribute('y1', 12);
-    line_up2[i].setAttribute('x2', 19);
-    line_up2[i].setAttribute('y2', 12);
 
-    }
+
+
+
+
 
 
 
 y =  document.querySelectorAll(".specs_text");
-for (let e = 0; e <y.length ; e++) d("div", `generate_case ${data[e].name}spec`, y[e]);
+for (let e = 0; e <y.length ; e++) d("div", `activityButton`, y[e]);
 
-
+let activityButton =  document.querySelectorAll(".activityButton");
+for (let e = 0; e <y.length ; e++) d("div", `generate_case ${data[e].name}spec`, activityButton[e]);
 
 y =  document.querySelectorAll(".generate_case");
 for (let e = 0; e <y.length ; e++) d("button", `generate`, y[e]);
@@ -160,9 +145,10 @@ for (let e = 0; e <y.length ; e++) d("button", `generate`, y[e]);
 y =  document.querySelectorAll(".generate");
 for (let e = 0; e <y.length ; e++) d("p", ``, y[e]);
 
+for (let e = 0; e <y.length ; e++) d("button", `saveHero ${data[e].name}`, activityButton[e]);
 
-
-
+y =  document.querySelectorAll(".saveHero");
+for (let e = 0; e <y.length ; e++) d("p", ``, y[e]);
 
 
 
