@@ -48,18 +48,3 @@ const base = [
       "currentPicture": 1
     }
   ]
-  const savedHeroesBase =[
-    {
-        "class": "",
-        "image": "",
-
-    },
-    {
-        // "strength":"",
-        // "dexterity":"",
-        // "constitution":"",
-        // "intelligence":"",
-        // "wisdom":"",
-        // "charisma":""
-    }
-  ]
