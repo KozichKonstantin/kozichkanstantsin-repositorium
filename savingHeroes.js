@@ -1,14 +1,15 @@
 import {data} from './data.js'
 import {savedHeroesBase} from './data.js'
 
-localStorage.clear()
+localStorage.clear();
+
 let savingHeroesButtons = document.getElementsByClassName('saveHero');
 for (let i=0; i < data.length; i++){
     savingHeroesButtons[i].addEventListener('click', function() {
         let number =  localStorage.getItem('number') - (-1);
         localStorage.setItem('number',`${number}`)
         console.log(number)
-
+       
     })
 }
 

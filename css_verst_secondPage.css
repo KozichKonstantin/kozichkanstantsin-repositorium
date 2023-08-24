@@ -55,7 +55,6 @@ header{
 }
 .logo_case{
     display: flex;
-    height: 100%;
     width: 100%;
     position: absolute;
     justify-content: right;
