@@ -16,7 +16,10 @@ for(let i=0; i< data.length; i++){
             console.log(savedHeroesBase);
             console.log(stats);
         }
+        localStorage.setItem("savedCard",JSON.stringify(savedHeroesBase))
         console.log(savedClass)
     })
+    const savedHeroesBase = JSON.parse(localStorage.getItem("savedCard"))
+    document.getElementsByClassName('savedCardName').textContent =`${savedHeroesBase [0]['class']}`
+    console.log(document.getElementsByClassName('savedCardName').textContent, ' suka')
 }
-
