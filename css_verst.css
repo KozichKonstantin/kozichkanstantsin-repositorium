@@ -178,10 +178,10 @@ input[type="number"]:focus {
     position: relative;
     background: #FFF;
     z-index: 1;
+    margin-top: 10px;
 }        
 .quantity_inner .bt_minus,
 .quantity_inner .bt_plus,
-.quantity_inner .bt_buy,
 .quantity_inner .quantity {
     height: 40px;
     width: 40px;
@@ -193,17 +193,6 @@ input[type="number"]:focus {
     outline: 0;
     border-radius: 26px;
 }
-.quantity_inner .bt_buy {
-    background: #337AB7;
-    width: 90px;
-    height: 48px;
-    position: absolute;
-    right: -70px;
-    top: -4px;
-    z-index: -1;
-    border-radius: 0 26px 26px 0;
-    border: 4px solid #337AB7;
-}
 .quantity_inner .quantity {
     width: 60px;
     text-align: center;
@@ -213,8 +202,7 @@ input[type="number"]:focus {
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 .quantity_inner .bt_minus svg,
-.quantity_inner .bt_plus svg,
-.quantity_inner .bt_buy svg {
+.quantity_inner .bt_plus svg {
     stroke: #337AB7;
     stroke-width: 4;
     transition: 0.5s;
@@ -223,14 +211,7 @@ input[type="number"]:focus {
     height: 20px;
     width: 20px;
 }    
-.quantity_inner .bt_buy svg {
-    stroke: #BFE2FF;
-    position: relative;
-    left: 6px;
-}    
-.quantity_inner .bt_buy:hover svg {
-    stroke: #FFF;
-}
+
 .quantity_inner .bt_minus:hover svg,
 .quantity_inner .bt_plus:hover svg {
     stroke: #000;
@@ -239,7 +220,7 @@ input[type="number"]:focus {
 .generate_case{
     display: flex;
     /* justify-content: center; */
-    margin-top: 70px;
+    margin-top: 10px;
     width: 100%;
     height: 20%;
 }

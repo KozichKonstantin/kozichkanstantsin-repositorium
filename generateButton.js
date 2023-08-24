@@ -1,3 +1,5 @@
+import {data} from './data.js';
+
 // function consicFunction(){
 //     let name = 'nameOfCard';
 // }
@@ -24,11 +26,11 @@
       generates[k].addEventListener('click', function() {
         const generate = generates[k];
     for (let i = 0; i < 6; i++) {
-      genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
-    if (genSrav == "barbarianSpec" || genSrav == "wizardSpec" || genSrav == "witchSpec" || genSrav == "spySpec" || genSrav == "paladinSpec" || genSrav == "monachSpec" || genSrav == "druidSpec" || genSrav == "bardSpec"){
+    let genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
+    if (genSrav == (`${data[k]['name']}spec`)){
       let input =  document.querySelectorAll(('.'+ genSrav));
       input[i].value = Math.floor((Math.random() * 20 )+ 1);
-    }
+  }
   }
 })
 }
