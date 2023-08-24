@@ -27,7 +27,7 @@ import {data} from './data.js';
         const generate = generates[k];
     for (let i = 0; i < 6; i++) {
     let genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
-    if (genSrav == (`${data[k]['name']}spec`)){
+    if (genSrav == (`${data[k]['name']}Spec`)){
       let input =  document.querySelectorAll(('.'+ genSrav));
       input[i].value = Math.floor((Math.random() * 20 )+ 1);
   }
