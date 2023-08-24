@@ -32,8 +32,8 @@ import {data} from './data.js';
       input[i].value = Math.floor((Math.random() * 20 )+ 1);
   }
   }
-})
-}
+})}
+
 
   let bt_minus = document.getElementsByClassName('bt_minus');
     for(let j = 0; j<bt_minus.length; j++){

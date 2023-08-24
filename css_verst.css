@@ -98,6 +98,7 @@ header{
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 40px;
+    border-radius: 30px;
 }
 .card{
     display: flex;
@@ -108,12 +109,10 @@ header{
     margin: 15px;
     width: 350px;
     height: 520px;
-    background-color: white;
 }
 [class^='slideButton_case']{
 
     height: 100%;
-    background-color: rgb(255, 255, 255);
     opacity: 0;
     cursor: pointer;
     justify-content: center;
@@ -122,10 +121,14 @@ header{
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
-.slideButton_case_left , .slideButton_case_right {
+[class^='slideButton_case']:hover{
+    opacity: 0.4;
+}
+.slideButton_case_left , .slideButton_case_right  > p{
     font-size: 150px;
 }
 .slideButton_case_left{
+    z-index: 3;
     border-radius: 0px 120px 120px 0px;
 }
 .slideButton_case_right{
@@ -144,6 +147,15 @@ header{
     z-index: 1;
     height: 100%;
     width: 100%;
+}
+.frame{
+    position: absolute;
+    width: 350px;
+    height: 520px;
+    margin-left: -70px;
+    background-color: #FFF;
+    border-radius: 30px;
+    -webkit-transition: all 0.5s ease;   /*добавить анимацию*/
 }
 .specs{
     width: 40%;
@@ -166,8 +178,6 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
-
-
 .quantity_inner * {
     box-sizing: border-box;    
 }    
@@ -216,27 +226,45 @@ input[type="number"]:focus {
 .quantity_inner .bt_plus:hover svg {
     stroke: #000;
 }
-
+.activityButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+}
 .generate_case{
     display: flex;
-    /* justify-content: center; */
-    margin-top: 10px;
-    width: 100%;
     height: 20%;
+    margin-right: 10px;
 }
 .generate{
-    width: 130px;
+    width: 100px;
     height: 45px;
-    border-radius: 30%;
-    background-color: gold;
+    border-radius: 30px;
+    background-color: rgb(230, 72, 72);
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
 }
 .generate:hover{
-    background-color: rgb(227, 193, 0);
+    background-color: rgb(255, 181, 181);
 }
 .generate > p::after{
     content: "GENERATE";
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.saveHero {
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: rgb(230, 72, 72);
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+}
+.saveHero:hover{
+    background-color: rgb(255, 181, 181);
+}
+.saveHero > p::after{
+    content: "SAVE";
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 footer{
