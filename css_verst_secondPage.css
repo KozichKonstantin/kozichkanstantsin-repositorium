@@ -1,3 +1,6 @@
+.headSecondPage{
+    height: 112px;
+}
 .infoSecondPage{
     height: 1200px;
     display: flex;
@@ -22,14 +25,14 @@
     margin-bottom: 30px;
     background-color: antiquewhite;
     border-radius: 5px;
-
+    border: 2px solid rgb(230, 72, 72) ;
 }
 .savedList{
     display: grid;
     grid-template-columns: 420px 420px 420px;
     grid-template-rows: 600px;
     width: 95%;
-    height: 600px;
+    height: 555px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 }
@@ -42,6 +45,7 @@
     height: 520px;
     background-color: burlywood;
     border-radius: 30px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .savedCardName{
     margin: 5px;
@@ -98,8 +102,12 @@
     background-color: rgb(215, 194, 168);
     margin: 5px;
     border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
 }
 .activityButton > img{
     width: 60%;
     height: 60%;
+}
+.activityButton:hover{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
 }
