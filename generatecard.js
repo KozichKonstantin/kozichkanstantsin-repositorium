@@ -99,7 +99,7 @@ for (let i=0; i<inputsMassive.length; i++){
     let grandadClass = inputsMassive[i].parentNode.parentNode.parentNode.parentNode.className.toString().substring(11)
     for(let j = 0; j < data.length; j++){
         if( grandadClass == data[j]['name']){
-            inputsMassive[i].classList.add(`${grandadClass}spec`);
+            inputsMassive[i].classList.add(`${grandadClass}Spec`);
         }
     }
 }
