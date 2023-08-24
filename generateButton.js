@@ -1,3 +1,9 @@
+import {data} from './data.js';
+
+// function consicFunction(){
+//     let name = 'nameOfCard';
+// }
+// console.log(name)
 //  $(document).ready(function(){
 //     $(window).bind("resize", resizeWindow);
 //     function resizeWindow(e){
@@ -12,35 +18,24 @@
 //       }
 //     }
 //   });
-// let generates = document.getElementsByClassName('generate');
-// for(let k = 0; k < generates.length; k++){
-//   generates[k].addEventListener('click', function() {
-//     const generate = generates[k];
-// for (let i = 0; i < 6; i++) {
-//   genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
-// if (genSrav == "barbarianSpec" || genSrav == "wizardSpec" || genSrav == "witchSpec" || genSrav == "spySpec" || genSrav == "paladinSpec" || genSrav == "monachSpec" || genSrav == "druidSpec" || genSrav == "bardSpec"){
-//   let input =  document.querySelectorAll(('.'+ genSrav));
-//   input[i].value = Math.floor((Math.random() * 20 )+ 1);
-// }
-// }
-// })
-// }
-let generates = document.getElementsByClassName('generate');
-for(let k = 0; k < generates.length; k++){
-  generates[k].addEventListener('click', function() {
-    const generate = generates[k];
-for (let i = 0; i < 6; i++) {
-  for (let j=0; j < base.length; j++){
-    genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
-    if (genSrav == base[j]['name'] + 'Spec'){
-        let input =  document.querySelectorAll(('.'+ genSrav));
-        input[i].value = Math.floor((Math.random() * 20 )+ 1)
+
+
+
+  let generates = document.getElementsByClassName('generate');
+    for(let k = 0; k < generates.length; k++){
+      generates[k].addEventListener('click', function() {
+        const generate = generates[k];
+    for (let i = 0; i < 6; i++) {
+    let genSrav = generate.parentNode.className.toString().slice(14, (generate.length));
+    if (genSrav == (`${data[k]['name']}spec`)){
+      let input =  document.querySelectorAll(('.'+ genSrav));
+      input[i].value = Math.floor((Math.random() * 20 )+ 1);
   }
-}
-}
-})
-}
-let bt_minus = document.getElementsByClassName('bt_minus');
+  }
+})}
+
+
+  let bt_minus = document.getElementsByClassName('bt_minus');
     for(let j = 0; j<bt_minus.length; j++){
       bt_minus[j].addEventListener('click', function() {
         if(bt_minus[j].nextElementSibling.value <= 1){
