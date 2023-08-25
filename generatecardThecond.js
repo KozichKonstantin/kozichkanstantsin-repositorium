@@ -40,7 +40,7 @@ let h2Fills = document.getElementsByClassName('specName');
 for (let i=0; i < cardsMassive.length; i++){
     h2Fills[i].textContent = cardsMassive[i].classList.toString().substring(9);
 }
-for (let e = 0; e < h2Fills.length; e++) d("p", ``, h2Fills[e], "1");
+for (let e = 0; e < h2Fills.length; e++) d("p", `specValue`, aded[e], "1");
 
 
 for (let e = 0; e < savecard.length; e++) d("div", `activityButtons_case`, savecard[e]);
