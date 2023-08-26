@@ -1,11 +1,37 @@
 import {data} from './data.js';
-import { savedHeroesBase } from './data.js';
 
 
-for(let i =0; i< document.querySelectorAll('.savedCardNameText').length; i++){
-document.getElementsByClassName('savedCardNameText')[i].textContent = localStorage.getItem("savedClass");
-document.getElementsByClassName('savedCardPictureImg')[i].src = localStorage.getItem("image") + '.jpg'
-    for (let j=0; j < 6; j++){
-    document.getElementsByClassName('specName')[j].textContent = localStorage.getItem(`stats${j}`)
-    }
-}
+
+
+// console.log(savedHeroesBase[3]["class"]);
+
+
+
+
+let savedHeroesBase = JSON.parse(localStorage.getItem(`help`));
+console.log(Object.keys(savedHeroesBase["bard1"]) )
+
+console.log(Object.keys(savedHeroesBase["bard1"]["img"]) )
+// for(let j =0; j< document.querySelectorAll('.savedCardNameText').length; j++){
+//     document.getElementsByClassName('savedCardNameText')[j].textContent = savedHeroesBase[i].class;
+//     console.log("lox")
+//     }
+
+
+
+console.log(savedHeroesBase)
+// for(let k=0; k < localStorage.getItem('number'); k++){
+//     document.getElementsByClassName('savedCardPictureImg')[k].src = savedHeroesBase["bard1"].img + '.jpg';
+//     for (let h=0; h < 6 ; h++){
+//         document.getElementsByClassName('specValue')[h].textContent = savedHeroesBase["bard1"].valued[j];
+//     }
+// }
+
+
+// let cardNumber = document.getElementsByClassName('savedCard')[i].classList.toString().substring(10);
+// cardNumber = cardNumber -(-1)
+// console.log(cardNumber)
+// console.log(document.getElementsByClassName('specName')[j].textContent.slice(0, -1))
+//         let cuttedText = document.getElementsByClassName('specName')[j].textContent.slice(0, -1) 
+//         cuttedText += localStorage.getItem(`stats${j}`);
+//         console.log(cuttedText);

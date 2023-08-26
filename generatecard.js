@@ -1,6 +1,6 @@
 import {data} from './data.js';
 import {stats} from './data.js';
-
+export { d };
 
 
 
@@ -22,76 +22,64 @@ for (let e = 0; e < card.length ; e++) {
 
 
 
-let y = document.querySelectorAll(".image_case");
-for (let e = 0; e <y.length ; e++) d("div", `image ${data[e].name}`, y[e]);
+let elementsMassive = document.querySelectorAll(".image_case");
+for (let e = 0; e <elementsMassive.length ; e++) d("div", `image ${data[e].name}`, elementsMassive[e]);
 
 
 
 let images = document.querySelectorAll(".image");
 for (let e = 0; e <images.length ; e++) {
     d("div", `slideButton_case_left`, images[e]);
-y = document.querySelectorAll(".slideButton_case_left");
-for (let e = 0; e <y.length ; e++) d("p", `left`, y[e]);
+elementsMassive = document.querySelectorAll(".slideButton_case_left");
+for (let e = 0; e <elementsMassive.length ; e++) d("p", `left`, elementsMassive[e]);
 
-y = document.querySelectorAll( ".slideButton_case_left");
-for (let e = 0; e <y.length ; e++) {
-    y[e].innerHTML = "&#8249"
+elementsMassive = document.querySelectorAll( ".slideButton_case_left");
+for (let e = 0; e <elementsMassive.length ; e++) {
+    elementsMassive[e].innerHTML = "&#8249"
 }
 }
 for (let e = 0; e <images.length ; e++) d("div", `costil`, images[e]);
 
-y = document.querySelectorAll( ".costil");
-for (let e = 0; e <images.length ; e++) d("img", `frame ${data[e].name}`, y[e]);
+elementsMassive = document.querySelectorAll( ".costil");
+for (let e = 0; e <images.length ; e++) d("img", `frame ${data[e].name}`, elementsMassive[e]);
 
 for (let e = 0; e <images.length ; e++) d("div", `slideButton_case_right`, images[e]);
-y = document.querySelectorAll(".slideButton_case_right");
-for (let e = 0; e <y.length ; e++) d("p", `right`, y[e]);
-y = document.querySelectorAll( ".slideButton_case_right");
-for (let e = 0; e <y.length ; e++) {
-    y[e].innerHTML = "&#8250"
+elementsMassive = document.querySelectorAll(".slideButton_case_right");
+for (let e = 0; e <elementsMassive.length ; e++) d("p", `right`, elementsMassive[e]);
+elementsMassive = document.querySelectorAll( ".slideButton_case_right");
+for (let e = 0; e <elementsMassive.length ; e++) {
+    elementsMassive[e].innerHTML = "&#8250"
 }
 
 
+elementsMassive =  document.querySelectorAll(".specs");
+for (let e = 0; e <elementsMassive.length ; e++) d("ul", `specs_text`, elementsMassive[e]);
 
-
-
- y =  document.querySelectorAll(".specs");
-for (let e = 0; e <y.length ; e++) d("ul", `specs_text`, y[e]);
-
-y =  document.querySelectorAll(".specs_text");
+elementsMassive =  document.querySelectorAll(".specs_text");
 
     for(let i = 0; i<6; i++){
-        for (let e = 0; e <y.length ; e++){ 
-            d("li", `specs_li ${stats[i].stat}_text`, y[e],  `${stats[i].stat} `);
-            d("div", `quantity_inner`, y[e]);
+        for (let e = 0; e <elementsMassive.length ; e++){ 
+            d("li", `specs_li ${stats[i].stat}_text`, elementsMassive[e],  `${stats[i].stat} `);
+            d("div", `quantity_inner`, elementsMassive[e]);
         }
 }
 
-y =  document.querySelectorAll(".quantity_inner");
-for (let e = 0; e <y.length ; e++) d("button", `bt_minus`, y[e]);
+elementsMassive =  document.querySelectorAll(".quantity_inner");
+for (let i = 0; i <elementsMassive.length ; i++) d("button", `bt_minus`, elementsMassive[i]);
 
-
-
-
-
-
-
-
-y =  document.querySelectorAll(".quantity_inner");
-    for (let e = 0; e <y.length ; e++)
+elementsMassive =  document.querySelectorAll(".quantity_inner");
+    for (let e = 0; e <elementsMassive.length ; e++)
     {
-         d("input", 'quantity', y[e])
+         d("input", 'quantity', elementsMassive[e])
     }
 
-    y =  document.querySelectorAll(".quantity");
-    for(let i = 0; i<y.length; i++){
-        y[i].setAttribute('type', 'number');
-        y[i].setAttribute('size', '2');
-        y[i].setAttribute('max', '20');
-        y[i].setAttribute('min', '20');
+    elementsMassive =  document.querySelectorAll(".quantity");
+    for(let i = 0; i<elementsMassive.length; i++){
+        elementsMassive[i].setAttribute('type', 'number');
+        elementsMassive[i].setAttribute('size', '2');
+        elementsMassive[i].setAttribute('max', '20');
+        elementsMassive[i].setAttribute('min', '20');
         }
-
-      
 
 
 let inputsMassive = document.getElementsByClassName('quantity')
@@ -104,51 +92,44 @@ for (let i=0; i<inputsMassive.length; i++){
     }
 }
 
-y =  document.querySelectorAll(".bt_minus");    
-for (let e = 0; e <y.length ; e++) d("svg", `svgs`, y[e]);
+elementsMassive =  document.querySelectorAll(".bt_minus");    
+for (let e = 0; e <elementsMassive.length ; e++) d("svg", `svgs`, elementsMassive[e]);
 
-y =  document.querySelectorAll(".svgs");    
-for (let e = 0; e <y.length ; e++) d("line", `line_d`, y[e], "-");
+elementsMassive =  document.querySelectorAll(".svgs");    
+for (let e = 0; e <elementsMassive.length ; e++) d("line", `line_d`, elementsMassive[e], "-");
 
-y =  document.querySelectorAll(".quantity_inner");
-for (let e = 0; e <y.length ; e++) d("button", `bt_plus`, y[e]);
+elementsMassive =  document.querySelectorAll(".quantity_inner");
+for (let e = 0; e <elementsMassive.length ; e++) d("button", `bt_plus`, elementsMassive[e]);
 
-y =  document.querySelectorAll(".bt_plus");    
-for (let e = 0; e <y.length ; e++) d("svg", `svg`, y[e]);
+elementsMassive =  document.querySelectorAll(".bt_plus");    
+for (let e = 0; e <elementsMassive.length ; e++) d("svg", `svg`, elementsMassive[e]);
 
 let svg = document.querySelectorAll('svg');
 for(let i = 0; i<svg.length; i++){
 svg[i].setAttribute('viewBox',"0 0 24 24");
 }
 
-y = document.querySelectorAll('.svg');
+elementsMassive = document.querySelectorAll('.svg');
 
-for (let e = 0; e <y.length ; e++) d("line", `line_up`, y[e], "+");
-
-
+for (let e = 0; e <elementsMassive.length ; e++) d("line", `line_up`, elementsMassive[e], "+");
 
 
-
-
-
-
-
-y =  document.querySelectorAll(".specs_text");
-for (let e = 0; e <y.length ; e++) d("div", `activityButton`, y[e]);
+elementsMassive =  document.querySelectorAll(".specs_text");
+for (let e = 0; e <elementsMassive.length ; e++) d("div", `activityButton`, elementsMassive[e]);
 
 let activityButton =  document.querySelectorAll(".activityButton");
-for (let e = 0; e <y.length ; e++) d("div", `generate_case ${data[e].name}Spec`, activityButton[e]);
+for (let e = 0; e <elementsMassive.length ; e++) d("div", `generate_case ${data[e].name}Spec`, activityButton[e]);
 
-y =  document.querySelectorAll(".generate_case");
-for (let e = 0; e <y.length ; e++) d("button", `generate`, y[e]);
+elementsMassive =  document.querySelectorAll(".generate_case");
+for (let e = 0; e <elementsMassive.length ; e++) d("button", `generate`, elementsMassive[e]);
 
-y =  document.querySelectorAll(".generate");
-for (let e = 0; e <y.length ; e++) d("p", ``, y[e]);
+elementsMassive =  document.querySelectorAll(".generate");
+for (let e = 0; e <elementsMassive.length ; e++) d("p", ``, elementsMassive[e]);
 
-for (let e = 0; e <y.length ; e++) d("button", `saveHero ${data[e].name}`, activityButton[e]);
+for (let e = 0; e <elementsMassive.length ; e++) d("button", `saveHero ${data[e].name}`, activityButton[e]);
 
-y =  document.querySelectorAll(".saveHero");
-for (let e = 0; e <y.length ; e++) d("p", ``, y[e]);
+elementsMassive =  document.querySelectorAll(".saveHero");
+for (let e = 0; e <elementsMassive.length ; e++) d("p", ``, elementsMassive[e]);
 
 
 
