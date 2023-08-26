@@ -96,7 +96,7 @@ elementsMassive =  document.querySelectorAll(".bt_minus");
 for (let e = 0; e <elementsMassive.length ; e++) d("svg", `svgs`, elementsMassive[e]);
 
 elementsMassive =  document.querySelectorAll(".svgs");    
-for (let e = 0; e <elementsMassive.length ; e++) d("line", `line_d`, elementsMassive[e], "-");
+for (let e = 0; e <elementsMassive.length ; e++) d("line", `line_d`, elementsMassive[e], "–");
 
 elementsMassive =  document.querySelectorAll(".quantity_inner");
 for (let e = 0; e <elementsMassive.length ; e++) d("button", `bt_plus`, elementsMassive[e]);

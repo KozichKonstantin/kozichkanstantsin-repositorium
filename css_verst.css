@@ -271,6 +271,12 @@ input[type="number"]:focus {
 .quantity_inner .bt_plus:hover svg {
     stroke: #000;
 }
+.line_d{
+    font-size: 20px;
+}
+.line_up{
+    font-size: 20px;
+}
 .activityButton{
     display: flex;
     flex-direction: row;
