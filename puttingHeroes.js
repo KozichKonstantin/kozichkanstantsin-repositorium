@@ -8,12 +8,14 @@ import {data} from './data.js';
 
 
 
-let savedHeroesBase = JSON.parse(localStorage.getItem(`help${i}`));
+let savedHeroesBase = JSON.parse(localStorage.getItem(`help`));
+console.log(Object.keys(savedHeroesBase["bard1"]) )
 
-for(let j =0; j< document.querySelectorAll('.savedCardNameText').length; j++){
-    document.getElementsByClassName('savedCardNameText')[j].textContent = savedHeroesBase[i].class;
-    console.log("lox")
-    }
+console.log(Object.keys(savedHeroesBase["bard1"]["img"]) )
+// for(let j =0; j< document.querySelectorAll('.savedCardNameText').length; j++){
+//     document.getElementsByClassName('savedCardNameText')[j].textContent = savedHeroesBase[i].class;
+//     console.log("lox")
+//     }
 
 
 
