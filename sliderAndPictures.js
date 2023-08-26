@@ -29,9 +29,9 @@ for(let i=0; i < leftButtonsMassiv.length; i++){
   cardFirstImage.src = data[i]['img'] + '/' + data[i]['currentPicture'] + '.jpg';
 }
 
-
 for(let i=0; i<leftButtonsMassiv.length; i++){
   leftButtonsMassiv[i].addEventListener('click', function() {
+    
     const clickedLeftButton = leftButtonsMassiv[i];
     let buttonLeftSrav = clickedLeftButton.parentNode.className.toString().slice(6, (clickedLeftButton.length));
     for(let j=0; j < leftButtonsMassiv.length; j++){
@@ -51,11 +51,16 @@ for(let i=0; i<leftButtonsMassiv.length; i++){
       else{
       }
     }
+    
   })
+  
 }
+
+
 for(let i=0; i<rightButtonsMassiv.length; i++){
   rightButtonsMassiv[i].addEventListener('click', function() {
     const clickedRightButton = rightButtonsMassiv[i];
+    document.getElementsByClassName('frame')[i].classList.add('inAnimation');
     let buttonRightSrav = clickedRightButton.parentNode.className.toString().slice(6, (clickedRightButton.length));
     for(let j=0; j < rightButtonsMassiv.length; j++){
       if(buttonRightSrav == data[j]['name']){
@@ -72,5 +77,24 @@ for(let i=0; i<rightButtonsMassiv.length; i++){
         }
       }
     }
+    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');
   })
+}
+for(let i=0; i<leftButtonsMassiv.length; i++){
+  leftButtonsMassiv[i].addEventListener('click', function() {
+    document.getElementsByClassName('frame')[i].classList.add('inAnimation');
+    setTimeout( function (){
+    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 300)
+  }
+  )
+  
+}
+for(let i=0; i<rightButtonsMassiv.length; i++){
+  rightButtonsMassiv[i].addEventListener('click', function() {
+    document.getElementsByClassName('frame')[i].classList.add('inAnimation');
+    setTimeout( function (){
+    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 300)
+  }
+  )
+  
 }

@@ -69,3 +69,12 @@ export const data =[
         "stat": "Charisma",
       }
     ]
+export   const savedHeroesBase = [
+  {
+    "class": "",
+    "image": ""
+  },
+  {
+
+  }
+]

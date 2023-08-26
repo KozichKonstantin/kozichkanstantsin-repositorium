@@ -1,4 +1,5 @@
 import {data} from './data.js'
+import {savedHeroesBase} from './data.js'
 import {d} from './generatecard.js';
 
 
@@ -20,12 +21,6 @@ for (let i=0; i < data.length; i++){
         }
     )
 }
-
-
-
-
-
-
 
 for(let i=0; i< data.length; i++){
 

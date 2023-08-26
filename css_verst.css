@@ -83,6 +83,7 @@ a:hover > .logo{
    cursor: pointer;
    background-color: rgb(40, 40, 40);
    -webkit-transition: all 0.5s ease;
+   /* position: fixed; */
 }
 
 .message{
@@ -90,6 +91,8 @@ a:hover > .logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    margin-top: 50px;
     height: 20px;
     width: 55px;
     font-size: 15px;
@@ -97,7 +100,13 @@ a:hover > .logo{
     background-color: rgb(230, 72, 72);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 2px 2px 2px rgb(65, 65, 65);
+    opacity: 0;
+    animation: appending 0.5s forwards;
     /* -webkit-transition: all 0.5s ease; */
+}
+@keyframes appending {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .main_info{
     width: 100%;
@@ -181,12 +190,13 @@ a:hover > .logo{
     margin-left: -70px;
     background-color: #FFF;
     border-radius: 30px;
-    animation-name: Appearance;
-    animation-duration: 0.5s;
-    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+    
        /*добавить анимацию*/
 }
-@-webkit-keyframes Appearance{
+.inAnimation{
+    animation: appending 0.3s forwards;
+}
+@keyframes appending {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
