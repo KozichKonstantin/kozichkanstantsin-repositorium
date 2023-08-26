@@ -1,10 +1,11 @@
 import {data} from './data.js'
+// import {savedHeroesBase} from './data.js'
 import {d} from './generatecard.js';
 
 
 
 
-
+localStorage.clear()
 
 
 let elementsMassive = document.querySelector('.toSecondPage');
