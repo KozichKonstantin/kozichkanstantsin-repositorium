@@ -1,11 +1,11 @@
 import {data} from './data.js'
-import {savedHeroesBase} from './data.js'
+// import {savedHeroesBase} from './data.js'
 import {d} from './generatecard.js';
 
 
 
 
-
+localStorage.clear()
 
 
 let elementsMassive = document.querySelector('.toSecondPage');
@@ -48,7 +48,7 @@ for(let i=0; i< data.length; i++){
 
            
         }
-        return(localStorage.setItem(`help${localStorage.getItem(`number`)}`, JSON.stringify(savedHeroesBase)));
+        return(localStorage.setItem(`card${localStorage.getItem(`number`)}`, JSON.stringify(savedHeroesBase)));
     })
    
 }
