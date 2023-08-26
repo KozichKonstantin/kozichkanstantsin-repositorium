@@ -68,4 +68,4 @@ export const data =[
       {
         "stat": "Charisma",
       }
-    ]
+]
