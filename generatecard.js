@@ -9,6 +9,11 @@ function d(e, t, o, r="") {
     return t && l.classList.add(...t.split(" ")),r && (l.textContent = r), o.append(l)
 }
 
+// if (localStorage.getItem('number')>0){
+//     let elementsMassive = document.querySelector('.toSecondPage');
+//     d("h2", 'message', elementsMassive)
+//     console.log('pizdec')
+// }
 
 let cards_grid = document.querySelector(".cards_grid");
 for (let e = 0; e < data.length; e++) d("div", `card${e} card ${data[e].name}`, cards_grid);
