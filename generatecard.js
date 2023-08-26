@@ -1,6 +1,6 @@
 import {data} from './data.js';
 import {stats} from './data.js';
-
+export { d };
 
 
 
@@ -9,11 +9,6 @@ function d(e, t, o, r="") {
     return t && l.classList.add(...t.split(" ")),r && (l.textContent = r), o.append(l)
 }
 
-// if (localStorage.getItem('number')>0){
-//     let elementsMassive = document.querySelector('.toSecondPage');
-//     d("h2", 'message', elementsMassive)
-//     console.log('pizdec')
-// }
 
 let cards_grid = document.querySelector(".cards_grid");
 for (let e = 0; e < data.length; e++) d("div", `card${e} card ${data[e].name}`, cards_grid);
@@ -57,9 +52,6 @@ for (let e = 0; e <elementsMassive.length ; e++) {
 }
 
 
-
-
-
 elementsMassive =  document.querySelectorAll(".specs");
 for (let e = 0; e <elementsMassive.length ; e++) d("ul", `specs_text`, elementsMassive[e]);
 
@@ -75,13 +67,6 @@ elementsMassive =  document.querySelectorAll(".specs_text");
 elementsMassive =  document.querySelectorAll(".quantity_inner");
 for (let i = 0; i <elementsMassive.length ; i++) d("button", `bt_minus`, elementsMassive[i]);
 
-
-
-
-
-
-
-
 elementsMassive =  document.querySelectorAll(".quantity_inner");
     for (let e = 0; e <elementsMassive.length ; e++)
     {
@@ -95,8 +80,6 @@ elementsMassive =  document.querySelectorAll(".quantity_inner");
         elementsMassive[i].setAttribute('max', '20');
         elementsMassive[i].setAttribute('min', '20');
         }
-
-      
 
 
 let inputsMassive = document.getElementsByClassName('quantity')
@@ -129,13 +112,6 @@ svg[i].setAttribute('viewBox',"0 0 24 24");
 elementsMassive = document.querySelectorAll('.svg');
 
 for (let e = 0; e <elementsMassive.length ; e++) d("line", `line_up`, elementsMassive[e], "+");
-
-
-
-
-
-
-
 
 
 elementsMassive =  document.querySelectorAll(".specs_text");

@@ -1,21 +1,34 @@
 import {data} from './data.js'
-import {savedHeroesBase} from './data.js'
+import {d} from './generatecard.js';
+
+
 
 localStorage.clear();
+
+
+
+
+let elementsMassive = document.querySelector('.toSecondPage');
 
 let savingHeroesButtons = document.getElementsByClassName('saveHero');
 for (let i=0; i < data.length; i++){
     savingHeroesButtons[i].addEventListener('click', function() {
         let number =  localStorage.getItem('number') - (-1);
         localStorage.setItem('number',`${number}`)
-        console.log(number)
-       
-    })
+        if (number > 0 & number < 2){
+            d("h2", 'message', elementsMassive, "NEW")} 
+        }
+    )
 }
 
+
+
+
+
+
+
 for(let i=0; i< data.length; i++){
-    
-    
+
     // localStorage.clear();
     savingHeroesButtons[i].addEventListener('click', function() {
         const currentHeroButton = savingHeroesButtons[i];
@@ -34,16 +47,14 @@ for(let i=0; i< data.length; i++){
                 localStorage.setItem(`stats${j}`,`${stats[j].value}`)
 
             }
-            console.log(savedHeroesBase);
-            console.log(stats);
             document.getElementsByClassName('savedCardNameText').textContent =`${savedHeroesBase [0]['class']}`
-            console.log(document.getElementsByClassName('savedCardNameText').textContent, 'suka')
             
         }
         // localStorage.setItem("savedCard",JSON.stringify(savedHeroesBase))
         // console.log(savedClass)
+      
     })
     // const savedHeroesBase = JSON.parse(localStorage.getItem("savedCard"))
     
-
 }
+
