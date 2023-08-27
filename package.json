@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "jquery": "^3.7.0",
-    "mysql": "github:mysqljs/mysql"
+    "mysql": "github:mysqljs/mysql",
+    "nodemon": "^3.0.1"
   }
 }
