@@ -63,37 +63,108 @@ body{
     background-color: bisque;
 }
 .columnOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 95%;
-    width: 20%;
+    width: 30%;
     border-radius: 30px;
     background-color: rgb(220, 238, 253);
 }
 .mainSpecs{
+    width: 40%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
 
+    margin-right: 5px;
+    border-radius: 30px;
 }
 .skilBox{
-
+    width: 90px;
+    height: 90px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30%;
 }
+/*////////*/
 .aditionalSpecs{
-
+    width: 50%;
+    height: 95%;
 }
 .simpleRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+    width: 95%;
+    height: 25px;
+    background-color: rgb(230, 72, 72, 0.4);
+    border-radius: 30px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+}
+.inspirationBox > .yesOrNo{
+    width: 20px;
+    height: 20px;
+    background-color: bisque;
+    border-radius: 50%;
+    margin-right: 26px;
+}
+.inspirationBox >p{
+    margin-right: 5px;
+}
+.proficiencyBox  > p{
+    margin-right: 6px;
+    margin-left: 5px;
+    font-size: 12px;
 }
 .savingBox{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 160px;
+    width: 95%;
+    background-color: rgb(230, 72, 72, 0.4);
+    border-radius: 20px;
+}
+.savingBox > ul{
+    height: 100%;
+    width: 100%;
+}
+.savingList{
+    width: 95%;
+    height: 19%;
+    font-size: 12px;
 
 }
 .allSkillsBox{
-
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 395px;
+    width: 95%;
+    background-color: rgb(230, 72, 72, 0.4);
+    border-radius: 20px;
+    margin-top: 5px;
 }
 
 /*  /////////////////////////////  */
 .columnTwo{
     height: 95%;
-    width: 75%;
+    width: 40%;
     background-color: rgb(248, 255, 236);
     border-radius: 30px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 .armorBlock{
 
@@ -126,7 +197,10 @@ body{
 
 }
 .aditionalInfo{
-
+    width: 25%;
+    height: 95%;
+    border-radius: 30px;
+    background-color: aliceblue;
 }
 .justText{
 
