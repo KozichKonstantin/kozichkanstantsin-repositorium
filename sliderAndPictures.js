@@ -20,7 +20,14 @@
 
 import {data} from './data.js';
 
-
+// if(data["currentPicture"] =1){
+//     document.getElementsByClassName('slideButton_case_left')[i].classList.add("hiden");
+// }
+// if(data["currentPicture"] = data["count"]){
+//   for(let i=0; i < data.length; i++){
+//     document.getElementsByClassName('slideButton_case_right')[i].classList.add("hiden");
+//   }
+// }
 
 let leftButtonsMassiv = document.getElementsByClassName('slideButton_case_left')
 let rightButtonsMassiv = document.getElementsByClassName('slideButton_case_right')
@@ -31,7 +38,6 @@ for(let i=0; i < leftButtonsMassiv.length; i++){
 
 for(let i=0; i<leftButtonsMassiv.length; i++){
   leftButtonsMassiv[i].addEventListener('click', function() {
-    
     const clickedLeftButton = leftButtonsMassiv[i];
     let buttonLeftSrav = clickedLeftButton.parentNode.className.toString().slice(6, (clickedLeftButton.length));
     for(let j=0; j < leftButtonsMassiv.length; j++){
@@ -51,7 +57,12 @@ for(let i=0; i<leftButtonsMassiv.length; i++){
       else{
       }
     }
-    
+    if(data[i].currentPicture == 1){
+      leftButtonsMassiv[i].classList.add("hiden");
+    }else{
+      console.log("ya ne eby")
+      rightButtonsMassiv[i].classList.remove("hiden")
+    }
   })
   
 }
@@ -77,14 +88,20 @@ for(let i=0; i<rightButtonsMassiv.length; i++){
         }
       }
     }
-    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');
+    if(data[i].currentPicture + 1 == data[i]["count"]){
+      rightButtonsMassiv[i].classList.add("hiden");
+    }else{
+      console.log("ya ne eby x2")
+      leftButtonsMassiv[i].classList.remove("hiden")
+    }
+    // document.getElementsByClassName('frame')[i].classList.remove('inAnimation');
   })
 }
 for(let i=0; i<leftButtonsMassiv.length; i++){
   leftButtonsMassiv[i].addEventListener('click', function() {
     document.getElementsByClassName('frame')[i].classList.add('inAnimation');
     setTimeout( function (){
-    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 300)
+    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 1000)
   }
   )
   
@@ -93,7 +110,7 @@ for(let i=0; i<rightButtonsMassiv.length; i++){
   rightButtonsMassiv[i].addEventListener('click', function() {
     document.getElementsByClassName('frame')[i].classList.add('inAnimation');
     setTimeout( function (){
-    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 300)
+    document.getElementsByClassName('frame')[i].classList.remove('inAnimation');}, 1000)
   }
   )
   

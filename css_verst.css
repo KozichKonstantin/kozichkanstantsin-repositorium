@@ -172,10 +172,12 @@ a:hover > .logo{
 [class^='slideButton_case']:hover{
     opacity: 0.4;
 }
+.hiden{
+    pointer-events: none;
+}
 /* .costil{
     background-color: black;
 } */
-
 .image{
     display: grid;
     grid-template-columns: calc(100%/5) calc(100%*0.6) calc(100%/5);
@@ -194,7 +196,7 @@ a:hover > .logo{
        /*добавить анимацию*/
 }
 .inAnimation{
-    animation: appending 0.3s forwards;
+    animation: appending 1s forwards;
 }
 @keyframes appending {
     0% {opacity: 0;}
@@ -268,6 +270,12 @@ input[type="number"]:focus {
 .quantity_inner .bt_minus:hover svg,
 .quantity_inner .bt_plus:hover svg {
     stroke: #000;
+}
+.line_d{
+    font-size: 20px;
+}
+.line_up{
+    font-size: 20px;
 }
 .activityButton{
     display: flex;
