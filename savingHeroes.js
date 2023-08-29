@@ -51,7 +51,7 @@ for(let i=0; i< data.length; i++){
 
 
         }
-        return(localStorage.setItem(`card${localStorage.getItem("number")}`, JSON.stringify(savedHeroesBase)));
+        return(localStorage.setItem(`card${localStorage.getItem("number") - 1}`, JSON.stringify(savedHeroesBase)));
     })
 
 }

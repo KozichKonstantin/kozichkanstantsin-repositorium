@@ -229,7 +229,8 @@ input[type="number"]:focus {
 .quantity_inner {
     display: inline-flex;
     border-radius: 26px;
-    border: 4px solid #337AB7;
+    border: 4px solid rgb(230, 72, 72);
+    cursor: pointer;;
     position: relative;
     background: #FFF;
     z-index: 1;
@@ -256,8 +257,7 @@ input[type="number"]:focus {
     color: #000;
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
-.quantity_inner .bt_minus svg,
-.quantity_inner .bt_plus svg {
+.bt_minus,.bt_plus {
     stroke: #337AB7;
     stroke-width: 4;
     transition: 0.5s;
@@ -267,9 +267,8 @@ input[type="number"]:focus {
     width: 20px;
 }    
 
-.quantity_inner .bt_minus:hover svg,
-.quantity_inner .bt_plus:hover svg {
-    stroke: #000;
+.bt_minus:hover,.bt_plus:hover {
+    background-color: rgb(230, 72, 72, 0.4);
 }
 .line_d{
     font-size: 20px;
