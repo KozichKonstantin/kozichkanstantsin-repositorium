@@ -5,7 +5,7 @@ import {d} from './generatecard.js';
 
 
 
-localStorage.clear()
+// localStorage.clear()
 
 
 let elementsMassive = document.querySelector('.toSecondPage');
@@ -21,42 +21,38 @@ for (let i=0; i < data.length; i++){
     )
 }
 
+localStorage.clear()
 
-// localStorage.clear()
+
+
+
 
 let valued = [];
 let savedHeroesBase = {};
 
 for(let i=0; i< data.length; i++){
-   
+
     savingHeroesButtons[i].addEventListener('click', function() {
-     
+
         const currentHeroButton = savingHeroesButtons[i];
         let savedClass = currentHeroButton.className.toString().slice(9, (currentHeroButton.length))
-    
-
         if(savedClass == data[i]['name']){
 
-            savedHeroesBase.name = (`${savedClass}${localStorage.getItem(`number`)}`)
 
             let stats_input = document.getElementsByClassName(('quantity ' + savedClass + 'Spec'));
-            
-            
             for(let j=0; j < 6; j++){
-            valued[j] = stats_input[j].value;
-            savedHeroesBase[`${savedClass}${localStorage.getItem(`number`)}`] = [
-                        {"valued" : `${valued}`},
+            valued[j] =+ stats_input[j].value;
+            savedHeroesBase = [
+                        {"valued" : valued},
                         {"img" : `${(data[i]['img'] + '/' + data[i]['currentPicture'])}`}, 
                         {"class" : `${savedClass}`}]
                         console.log(savedHeroesBase)
-                        
             }
-            delete savedHeroesBase.name
-           
-        }
-        return(localStorage.setItem(`help`, JSON.stringify(savedHeroesBase)));
-    })
-   
-}
 
+
+        }
+        return(localStorage.setItem(`card${localStorage.getItem("number")}`, JSON.stringify(savedHeroesBase)));
+    })
+
+}
 
