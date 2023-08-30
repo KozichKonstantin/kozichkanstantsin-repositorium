@@ -234,8 +234,8 @@ footer{
     background-color: burlywood;
     border-radius: 30px;
     position: fixed;
-    top: 60px;
-    left: 480px;
+    top: calc(50% - 400px);
+    left: calc(50% - 450px);
     z-index: 7;
 }
 .head{

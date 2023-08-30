@@ -15,6 +15,12 @@ document.querySelector(".close").addEventListener('click', function() {
     document.querySelector("body").classList.remove('_active');
 
 })
+document.querySelector(".shadow_pop").addEventListener('click', function() {
+    document.querySelector(".none").classList.remove("background");
+    document.querySelector(".shadow_pop").classList.remove("_active");
+    document.querySelector("body").classList.remove('_active');
+})
+
 
 function addHover() {
    
@@ -31,5 +37,5 @@ function addHover() {
  
  
  document.querySelector(".close").addEventListener('mouseenter',addHover);
- document.querySelector(".none").addEventListener('mouseenter',removeHover)
+ document.querySelector(".none").addEventListener('mouseenter',removeHover);
  document.querySelector(".shadow_pop").addEventListener('mouseenter', addHover);
