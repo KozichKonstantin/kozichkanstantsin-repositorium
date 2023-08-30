@@ -588,12 +588,6 @@ footer{
     border: 2px solid burlywood;
 }
 
-.shadow_pop:hover .close{
-
-    background: #fddcc4;
-    border: 2px solid #fddcc4;
-}
-
 .shadow_pop{
 
     cursor: pointer;
@@ -613,30 +607,6 @@ footer{
     opacity: 1;
     left: 0;
 }
-
-
-   
-.shadow {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 3;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    transition: 1s;
-    opacity: 0;
-    animation: ani 0.5s forwards;
-    right: 0;
-    top:0;
-  }
-  
-  .shadow._active {
-    display: block;
-    transition: 1s;
-    visibility: visible;
-    z-index: 5;
-  }
-  
 
 
 

@@ -32,6 +32,4 @@ function addHover() {
  
  document.querySelector(".close").addEventListener('mouseenter',addHover);
  document.querySelector(".none").addEventListener('mouseenter',removeHover)
- document.querySelector(".shadow_pop").addEventListener('mouseleave', addHover);
-//  document.querySelector(".shadow_pop").addEventListener('mouseenter',removeHover);
-
+ document.querySelector(".shadow_pop").addEventListener('mouseenter', addHover);
