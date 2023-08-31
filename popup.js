@@ -1,8 +1,14 @@
 const btn_activ = document.querySelectorAll(".reedFull") ;
 
+
 for(let i =0; i<btn_activ.length; i++){
     btn_activ[i].addEventListener('click', function() {
-        console.log("gg")
+        const number = btn_activ[i].parentNode.parentNode.className.toString().slice(10 , btn_activ[i].length);
+        const card = localStorage.getItem(`card${number}`)
+        const gg = document.querySelector(".classname"); //dodelat jsonparse
+        gg.value = card[2];
+        console.log(card[1]);
+
         document.querySelector(".none").classList.add("background")
         document.querySelector(".shadow_pop").classList.toggle("_active")
         document.querySelector("body").classList.toggle("_active")
