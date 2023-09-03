@@ -21,6 +21,8 @@ for(let i =0; i<btn_activ.length; i++){
 }
 
 document.querySelector(".close").addEventListener('click', function() {
+    
+    document.querySelector(".none").classList.add("closingAnimation");
     document.querySelector(".none").classList.remove("background");
     document.querySelector(".shadow_pop").classList.remove("_active");
     document.querySelector("body").classList.remove('_active');
@@ -119,3 +121,11 @@ for(let i =0; i<input_check.length; i++){
     })
         
     }
+let coins = document.querySelectorAll('.coin');
+for (let i=0; i< coins.length; i++){
+    coins[0].style.backgroundColor = '#b87333';
+    coins[1].style.backgroundColor = 'silver';
+    coins[2].style.backgroundColor = '#8b784A';
+    coins[3].style.backgroundColor = 'gold';
+    coins[4].style.backgroundColor = '#e5e4e2';
+}

@@ -218,9 +218,16 @@ footer{
 
 
 
-
+.closingAnimation{
+    animation: appending 0.5s forwards;
+}
+@keyframes appending {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
 .none{
+    
     display: none;
 }
 
@@ -237,6 +244,12 @@ footer{
     top: calc(50% - 400px);
     left: calc(50% - 450px);
     z-index: 7;
+    animation: appending 0.5s forwards;
+    /* -webkit-transition: all 0.5s ease; */
+}
+@keyframes appending {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .head{
     display: flex;
