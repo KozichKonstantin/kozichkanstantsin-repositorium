@@ -65,3 +65,26 @@ input_check[i].addEventListener('click', function() {
     }
   })
 }
+for(let i =0; i<input_check.length; i++){
+    input_check[i].addEventListener('change', disable);
+}
+function disable(){
+    for(let i =0; i<input_check.length; i++){
+        input_check[i].addEventListener('change', disable_all);
+    }
+}
+
+function disable_all(){
+    for(let i=0; i<input_check.length; i++){
+        input_check[i].disabled = input_check[i].name !=this.name;
+        for(let j =0; j<input_check.length; j++){
+            input_check[j].addEventListener('click', anable_all);
+        }
+        
+    }
+}
+function anable_all(){
+    for(let i=0; i<input_check.length; i++){
+        input_check[i].removeAttribute(disabled);
+    }
+}

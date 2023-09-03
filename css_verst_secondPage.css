@@ -307,6 +307,10 @@ footer{
     border-radius: 30px;
 }
 .skilBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90px;
     height: 90px;
     background-color: aliceblue;
@@ -356,12 +360,13 @@ footer{
     width: 95%;
     background-color: rgb(230, 72, 72, 0.4);
     border-radius: 20px;
+    
 }
 .savingBox > ul{
     height: 100%;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
     justify-content: left;
 }
 .savingList{
@@ -481,10 +486,13 @@ footer{
 .moreInfo{
     width: 95%;
     height: 80px;
+    
 }
 .moreInfo >input{
     width: 100%;
     height: 100%;
+    margin-top: 3px;
+    border-radius: 30px;
 }
 .backpackBlock{
     margin-top: 5px;
@@ -511,9 +519,17 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    tify-content: center;
 }
 .moneyRow >p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px 5px 5px;
     margin-right: 5px;
+    background-color: gold;
+    
+    border-radius: 50%;
 }
 .moneyRow >input{
     width: 50px;
