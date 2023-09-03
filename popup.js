@@ -22,7 +22,7 @@ for(let i =0; i<btn_activ.length; i++){
 
 document.querySelector(".close").addEventListener('click', function() {
     
-    document.querySelector(".none").classList.add("closingAnimation");
+    
     document.querySelector(".none").classList.remove("background");
     document.querySelector(".shadow_pop").classList.remove("_active");
     document.querySelector("body").classList.remove('_active');
