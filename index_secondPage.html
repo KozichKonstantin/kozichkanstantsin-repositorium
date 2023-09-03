@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css_verst_secondPage.css">
     </head>
     <body>
-        <container>
+        <div class="container">
             <header>
                 <div class="header_content headSecondPage">
                     <div class ="name_case">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </header>
-        </container>
+        </div>
 
 
             <div class="main_info">
@@ -49,11 +49,165 @@
 
             <footer>
 
-            </footer>
-        
+            </footer>  
+            </div>   
+            <div class="none">
+                <div class="head">
+                    <div class="name Current"><p>Name</p><input> </div>
+                    <div class="classname Current"><p>Class</p><input class="classnameInput" > </div>
+                    <div class="race Current"><p>Race</p><input> </div>
+                    <div class="age Current"><p>Age</p><input></div>
+                    <div class ="level Current"><p>Lvl</p><input></div>
+                    <div class="experience Current"><p>Exp</p><input></div>
+                    <div class="aligment Current"><p>Alig</p><input></div>
+                </div>
+                <div class="info">
+                    <div class="columnOne">
+                        <div class ="mainSpecs">
+                            <div class ="skilBox"> 
+                                <p class="heading">Strength</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>                               
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Dexterity</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Constitution</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Intelligence</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Wisdom</p>
+                                <p class="stats"></p> 
+                                <p class="plusMinus"></p>
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Charisma</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>
+                            </div>
+                        </div>
+                        <div class ="aditionalSpecs">
+                            <div class ="inspirationBox simpleRow"> <p class="yesOrNo"></p> <p>Inspiration</p></div>
+                            <div class ="proficiencyBox simpleRow"> <p>+3</p><p>Profciency Bonus</p></div>
+                            <div class ="savingBox"> 
+                                <ul>
+                                    <div class="Strength_column"><input class="input_chek" type="checkbox" name="vehicle0"><label for="vehicle0">Strength</label></div>
+                                    <div class="Dexterity_column"><input class="input_chek" type="checkbox" name="vehicle1"><label for="vehicle1">Dexterity</label></div>                                  
+                                    <div class="Constitution_column"><input class="input_chek" type="checkbox" name="vehicle2"><label for="vehicle2">Constitution</label></div>  
+                                    <div class="Intelligence_column"><input class="input_chek" type="checkbox" name="vehicle3"><label for="vehicle3">Intelligence</label></div> 
+                                    <div class="Wisdom_column"><input class="input_chek" type="checkbox" name="vehicle4"><label for="vehicle4">Wisdom</label></div>                                
+                                    <div class="Charisma_column"><input class="input_chek" type="checkbox" name="vehicle5"><label for="vehicle5">Charisma</label></div>
+                                </ul>
+                            </div>
+                            <div class ="allSkillsBox">
+                                <ul>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                    <li class="skillsList"><p class="plusMinusTwo"></p><p class="additionalSpecName"></p><p class="homeSpec"></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="columnTwo">
+                        <div class="armorBlock">
+                            <div class ="armorRow">
+                                <div class ="armorCube"><input><p class="armorName"></p></div>
+                                <div class ="armorCube"><input><p class="armorName"></p></div>
+                                <div class ="armorCube"><input><p class="armorName"></p></div>
+                            </div>
+                            <div class ="hitCollum">
+                                <div class ="HitBox"><input><p class="hitName">Current hit points</p></div>
+                                <div class ="HitBox"><input><p class="hitName">Temporary hit points</p></div>
+                            </div>
+                            <div class ="diceNdeath">
+                                <div class="diceBox"><input><p class="hitDice">Hit Dice</p></div>
+                                <div class="diceBox"><p class="successes"></p><p class="failures"></p><p class="hitDice"></p>Death Saves</div>
+                            </div>
+                        </div>
+                        <div class="weaponBlock">
+                            <div class="weaponRow"><p>Name</p><p>Atk Bonus</p><p>Damage</p></div>
+                            <div class ="weaponRow"><input class="weaponName"><input class="bonusVal"><input class="damage"> </div>
+                            <div class ="weaponRow"><input class="weaponName"><input class="bonusVal"><input class="damage"> </div>
+                            <div class ="weaponRow"><input class="weaponName"><input class="bonusVal"><input class="damage"> </div>
+                            <div class ="weaponRow"><input class="weaponName"><input class="bonusVal"><input class="damage"> </div>
+                            <div class = "moreInfo"><input></div>
+                        </div>
+                        <div class="backpackBlock">
+                            <div class="money">
+                                <ul>
+                                    <li class="moneyRow"><p>cp</p><input class="moneyCount"></li>
+                                    <li class="moneyRow"><p>sp</p><input class="moneyCount"></li>
+                                    <li class="moneyRow"><p>ep</p><input class="moneyCount"></li>
+                                    <li class="moneyRow"><p>gp</p><input class="moneyCount"></li>
+                                    <li class="moneyRow"><p>pp</p><input class="moneyCount"></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <ul>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                    <li class="itemRow"><input class="item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="aditionalInfo">
+                        <div class ="prehistory">
+                            <div class="justText personality"><input> </div>
+                            <div class = "justText ideals"><input></div>
+                            <div class="justText bonds"><input></div>
+                            <div class="justText flaws"><input></div>
+                        </div>
+                        <div class ="skilsBlock">
+                            <ul>
+                                <li class="skillBox"></li>
+                                <li class="skillBox"></li>
+                                <li class="skillBox"></li>
+                                <li class="skillBox"></li>
+                                <li class="raceSkill"></li>
+                                <li class="raceSkill"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="close" id="closes">
+                    <img src="data/Vector.svg" alt="close">
+                </div>
+            </div>  
+            <div class="shadow_pop"></div>
         <script type="module" src="generatecardThecond.js"></script>
         <script type="module" src="puttingHeroes.js"></script>
         <script type="module" src="delete.js"></script>
+        <script type="module" src="popup.js"></script>
         <script type="module" src="pdf.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     </body>
