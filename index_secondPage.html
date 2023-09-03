@@ -54,7 +54,7 @@
             <div class="none">
                 <div class="head">
                     <div class="name Current"><p>Name</p><input> </div>
-                    <div class="classname Current"><p>Class</p><input class="classname" readonly> </div>
+                    <div class="classname Current"><p>Class</p><input class="classnameInput" > </div>
                     <div class="race Current"><p>Race</p><input> </div>
                     <div class="age Current"><p>Age</p><input></div>
                     <div class ="level Current"><p>Lvl</p><input></div>
@@ -65,27 +65,33 @@
                     <div class="columnOne">
                         <div class ="mainSpecs">
                             <div class ="skilBox"> 
-                                <p class="heading"></p>
+                                <p class="heading">Strength</p>
+                                <p class="stats"></p>
+                                <p class="plusMinus"></p>                               
+                            </div>
+                            <div class ="skilBox">
+                                <p class="heading">Dexterity</p>
+                                <p class="stats"></p>
                                 <p class="plusMinus"></p>
                             </div>
                             <div class ="skilBox">
-                                <p class="heading"></p>
+                                <p class="heading">Constitution</p>
+                                <p class="stats"></p>
                                 <p class="plusMinus"></p>
                             </div>
                             <div class ="skilBox">
-                                <p class="heading"></p>
+                                <p class="heading">Intelligence</p>
+                                <p class="stats"></p>
                                 <p class="plusMinus"></p>
                             </div>
                             <div class ="skilBox">
-                                <p class="heading"></p>
+                                <p class="heading">Wisdom</p>
+                                <p class="stats"></p> 
                                 <p class="plusMinus"></p>
                             </div>
                             <div class ="skilBox">
-                                <p class="heading"></p>
-                                <p class="plusMinus"></p>
-                            </div>
-                            <div class ="skilBox">
-                                <p class="heading"></p>
+                                <p class="heading">Charisma</p>
+                                <p class="stats"></p>
                                 <p class="plusMinus"></p>
                             </div>
                         </div>
@@ -94,12 +100,12 @@
                             <div class ="proficiencyBox simpleRow"> <p>+3</p><p>Profciency Bonus</p></div>
                             <div class ="savingBox"> 
                                 <ul>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
-                                    <li class="savingList"><p class="plusMinusTwo"></p><p class="saveSpecName"></p></li>
+                                    <div class="Strength_column"><input class="input_chek" type="checkbox" name="vehicle0"><label for="vehicle0">Strength</label></div>
+                                    <div class="Dexterity_column"><input class="input_chek" type="checkbox" name="vehicle1"><label for="vehicle1">Dexterity</label></div>                                  
+                                    <div class="Constitution_column"><input class="input_chek" type="checkbox" name="vehicle2"><label for="vehicle2">Constitution</label></div>  
+                                    <div class="Intelligence_column"><input class="input_chek" type="checkbox" name="vehicle3"><label for="vehicle3">Intelligence</label></div> 
+                                    <div class="Wisdom_column"><input class="input_chek" type="checkbox" name="vehicle4"><label for="vehicle4">Wisdom</label></div>                                
+                                    <div class="Charisma_column"><input class="input_chek" type="checkbox" name="vehicle5"><label for="vehicle5">Charisma</label></div>
                                 </ul>
                             </div>
                             <div class ="allSkillsBox">
