@@ -4,6 +4,12 @@ body{
 .container{
     width: 100%;
 }
+@font-face {
+    font-family: "Bracker"; 
+    src: url("./data/DEATHCROW.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
 .block_1{
     height: 7em;
     width: 100%;
@@ -24,7 +30,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: rgb(102, 99, 102);
+    background-color: rgb(46, 43, 46);
 }
 .name_case{
     display:flex;
@@ -41,9 +47,11 @@ header{
 .name_text > h1{
     display: flex;
     justify-content: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
-    margin-top: 0;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: "Bracker";
+    color: rgb(212, 8, 8);
+    font-size: 4em;
+    margin-top: 5px;
     margin-bottom: 0;
 }
 .name_text > h2{
@@ -51,7 +59,10 @@ header{
     display: flex;
     justify-content: center;
     margin-top: -10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Bracker";
+    color: rgb(212, 8, 8);
+    font-size: 2em;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .logo_case{
     display: flex;
@@ -81,25 +92,25 @@ a:hover > .logo{
     margin-top: -0.6em;
    border-radius: 7px; 
    cursor: pointer;
-   background-color: rgb(40, 40, 40);
+   background-color: rgb(22, 21, 21);
    -webkit-transition: all 0.5s ease;
    /* position: fixed; */
 }
 
 .message{
-    content: 'NEW';
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-top: 50px;
-    height: 20px;
+    margin-top: 60px;
+    height: 30px;
     width: 55px;
-    font-size: 15px;
-    color: black;
-    background-color: rgb(230, 72, 72);
+    font-family: "Bracker";
+    font-size: 20px;
+    color: rgb(212, 8, 8);
+    background-color:  rgb(22, 21, 21);
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 2px 2px 2px rgb(65, 65, 65);
+    box-shadow: 0px 5px 5px 0px rgb(216, 16, 16);
     opacity: 0;
     animation: appending 0.5s forwards;
     /* -webkit-transition: all 0.5s ease; */
@@ -119,7 +130,7 @@ a:hover > .logo{
     width: 100%;
     height: 100%;
    
-    background-color: rgb(151, 148, 132);
+    background-color: rgb(70, 62, 61);
 }
 .cards_grid{
     display: grid;
@@ -137,7 +148,7 @@ a:hover > .logo{
 }
 .card{
     display: flex;
-    background-color:burlywood;
+    background-color:rgb(110, 74, 74);
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -206,11 +217,13 @@ a:hover > .logo{
 .specs{
     width: 40%;
     height: 100%;
-    margin-top: 15px
+    margin-top: 10px
 }
 .specs_text > li{
     list-style-type: none;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:"Bracker";
+    font-size: 23.3px;
+    color:rgb(17, 5, 5);
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -235,7 +248,7 @@ input[type="number"]:focus {
     position: relative;
     background: #FFF;
     z-index: 1;
-    margin-top: 10px;
+    
 }        
 .quantity_inner .bt_minus,
 .quantity_inner .bt_plus,
@@ -281,7 +294,7 @@ input[type="number"]:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 .generate_case{
     display: flex;

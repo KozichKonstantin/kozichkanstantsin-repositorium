@@ -21,6 +21,8 @@ for(let i =0; i<btn_activ.length; i++){
 }
 
 document.querySelector(".close").addEventListener('click', function() {
+    
+    
     document.querySelector(".none").classList.remove("background");
     document.querySelector(".shadow_pop").classList.remove("_active");
     document.querySelector("body").classList.remove('_active');
@@ -49,8 +51,8 @@ function addHover() {
 
 let nums = 0;
 const input_check = document.querySelectorAll(".input_chek")
-for(let i =0; i<input_check.length;i++){
-input_check[i].addEventListener('click', function() {
+// for(let i =0; i<input_check.length;i++){
+// input_check[i].addEventListener('click', function() {
     // if(input_check[i].checked == true){
     //    nums++
     //    console.log(nums)
@@ -59,9 +61,71 @@ input_check[i].addEventListener('click', function() {
     //     nums--
     //     console.log(nums)
     // }
-    var checkboxes = document.querySelectorAll('.input_chek:checked');
-    for (var input of checkboxes) {
-        console.log("hell")
+//     var checkboxes = document.querySelectorAll('.input_chek:checked');
+//     for (var input of checkboxes) {
+//         console.log("hell")
+//     }
+//   })
+// }
+
+// for(let i =0; i<input_check.length; i++){
+//     input_check[i].addEventListener('change', disable);
+// }
+// function disable(){
+//     for(let i =0; i<input_check.length; i++){
+//         input_check[i].addEventListener('change', disable_all);
+//     }
+// }
+
+// function disable_all(){
+//     for(let i=0; i<input_check.length; i++){
+//         input_check[i].disabled = input_check[i].name !=this.name;
+//         for(let j =0; j<input_check.length; j++){
+//             input_check[j].addEventListener('change', anable_all);
+//         }
+        
+//     }
+//     console.log ('haha')
+// }
+// function anable_all(){
+//     for(let i=0; i<input_check.length; i++){
+//         input_check[i].disabled = false;
+//     }
+// }
+localStorage.setItem('counter', 0) ;
+for(let i =0; i<input_check.length; i++){
+    input_check[i].addEventListener('click', ()=>{
+        if(localStorage.getItem('counter') == 1){
+            for(let j =0; j < input_check.length; j++){
+                if(input_check[j].checked == false){
+                    input_check[j].disabled = true;
+                }
+            }
+            console.log('opa')
+        }else{
+      /////// с этим кодом потом будут проблемы в сохранении листов из-за 
+      /////// обнуления счетчика, но без обнуления при перезагрузке страницы 
+      /////// все полетит по хуям      
+        }
+        if(input_check[i].checked == true){
+            localStorage.setItem('counter', localStorage.getItem('counter')-(-1)) ;
+        }else{
+            localStorage.setItem('counter', localStorage.getItem('counter')-1)
+            for(let j =0; j < input_check.length; j++){
+                if(input_check[j].checked == false){
+                    input_check[j].disabled = false;
+                }
+            }
+        }
+        
+    })
+        
     }
-  })
+let coins = document.querySelectorAll('.coin');
+for (let i=0; i< coins.length; i++){
+    coins[0].style.backgroundColor = '#b87333';
+    coins[1].style.backgroundColor = 'silver';
+    coins[2].style.backgroundColor = '#8b784A';
+    coins[3].style.backgroundColor = 'gold';
+    coins[4].style.backgroundColor = '#e5e4e2';
 }

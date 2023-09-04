@@ -10,9 +10,7 @@ for (let i=0; i < data.length; i++){
     savingHeroesButtons[i].addEventListener('click', function() {
         let number =  localStorage.getItem('number') - (-1);
         localStorage.setItem('number',`${number}`)
-        if (number > 0 & number < 2){
             d("h2", 'message', elementsMassive, "NEW")} 
-        }
     )
 }
 
