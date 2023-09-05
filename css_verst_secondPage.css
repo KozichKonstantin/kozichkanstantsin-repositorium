@@ -382,6 +382,16 @@ footer{
     margin-top: 20px;
     justify-content: left;
 }
+
+.column{
+    display: flex;
+}
+.skillsList{
+    display: flex;
+}
+
+.allSkillsBox > 
+
 .savingList{
     width: 95%;
     height: 19%;
@@ -398,6 +408,11 @@ footer{
     background-color: rgb(230, 72, 72, 0.4);
     border-radius: 20px;
     margin-top: 5px;
+    padding-left: 0;
+}
+
+.allSkillsBox > ul{
+    padding-left: 0;
 }
 /* input */
 
