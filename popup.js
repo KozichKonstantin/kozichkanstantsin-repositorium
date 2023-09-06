@@ -101,12 +101,11 @@ for(let i =0; i<input_check.length; i++){
                     input_check[j].disabled = true;
                 }
             }
-            console.log('opa')
-        }else{
+        }
       /////// с этим кодом потом будут проблемы в сохранении листов из-за 
       /////// обнуления счетчика, но без обнуления при перезагрузке страницы 
       /////// все полетит по хуям      
-        }
+        
         if(input_check[i].checked == true){
             localStorage.setItem('counter', localStorage.getItem('counter')-(-1)) ;
         }else{
