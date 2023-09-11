@@ -71,23 +71,24 @@ for(let i = 0; i<aded.length; i++){
     aded[i].setAttribute('src', 'data/addit_images/3481306.png');
     }
 
-for (let i=0; i<=(localStorage.getItem("number") - 1); i++){
-    let savedBase = JSON.parse(localStorage.getItem(`card${i}`));
-    if(savedBase != undefined){
-        console.log("help")
-        document.getElementsByClassName('savedCardNameText')[i].textContent = savedBase[2].class ;
-        document.getElementsByClassName('savedCardPictureImg')[i].src = savedBase[1].img+ ".jpg";
-        for(let j=0; j<6; j++){
-            document.getElementsByClassName('savedCardSpecs')[i].children[j].lastChild.textContent = savedBase[0].valued[j];
+    for (let i=0; i<=(localStorage.getItem("number") - 1); i++){
+        let savedBase = JSON.parse(localStorage.getItem(`card${i}`));
+        if(savedBase == undefined){
+            let del = document.getElementsByClassName(`${i}`);
+                // console.log(del[0].classList)
+                // del[0].style.display = "none";
+                // del[0].parentNode.removeChild(del[0]);
+                del[0].parentNode.removeChild(del[0]);
+                // cards.parentNode.removeChild(cards);
+        }
+        else{
+            console.log(document.getElementsByClassName('savedCardNameText')[i], i)
+            document.getElementsByClassName('savedCardNameText')[i].textContent = savedBase[2].class ;
+            document.getElementsByClassName('savedCardPictureImg')[i].src = savedBase[1].img+ ".jpg";
+            for(let j=0; j<6; j++){
+                document.getElementsByClassName('savedCardSpecs')[i].children[j].lastChild.textContent = savedBase[0].valued[j];
+            } 
         }
     }
-    else{
-            // let del = document.getElementsByClassName(`${i}`);
-            // console.log(del[0].classList)
-            // del[0].style.display = "none";
-            // del[0].parentNode.removeChild(del[0]);
-            // del[0].parentNode.removeChild(del[0]);
-            // cards.parentNode.removeChild(cards);
-    }
-}
-
+    
+    

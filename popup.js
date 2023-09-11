@@ -16,27 +16,27 @@ for(let i =0; i<btn_activ.length; i++){
         }
         let change = document.getElementsByClassName('Str');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[0]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[0] -10)/2) ;
         }
         change = document.getElementsByClassName('Dex');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[1]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[1] -10)/2)  ;
         }
         change = document.getElementsByClassName('Con');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[2]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[2] -10)/2)  ;
         }
         change = document.getElementsByClassName('Int');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[3]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[3] -10)/2) ;
         }
         change = document.getElementsByClassName('Wis');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[4]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[4]-10)/2)  ;
         }
         change = document.getElementsByClassName('Cha');
         for(let k=0; k<change.length; k++){
-            change[k].innerHTML = card[0].valued[5]  ;
+            change[k].innerHTML = Math.floor((card[0].valued[5] -10)/2) ;
         }
 
 
