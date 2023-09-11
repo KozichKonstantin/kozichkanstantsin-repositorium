@@ -420,10 +420,24 @@ footer{
 .classname{
     pointer-events: none;
 }
-
-
-
 /*  /////////////////////////////  */
+
+
+
+
+/* popupchik*/
+
+.plusMinusTwo{
+    opacity: 0.4;
+}
+.homeSpec{
+margin: 0 7px;
+text-decoration: underline;
+}
+
+
+
+
 .columnTwo{
     height: 95%;
     width: 40%;

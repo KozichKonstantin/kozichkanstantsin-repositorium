@@ -1,10 +1,11 @@
 let btn_activ = document.querySelectorAll(".reedFull") ;
 
 
+
 for(let i =0; i<btn_activ.length; i++){
     btn_activ[i].addEventListener('click', function() {
-        const number = btn_activ[i].parentNode.parentNode.className.toString().slice(10 , btn_activ[i].length);
-        if(localStorage.getItem(`card${number}`) == undefined){i++}else{
+        let number = btn_activ[i].parentNode.parentNode.className.toString().slice(10 , btn_activ[i].length);
+        console.log(number)
         const card =  JSON.parse(localStorage.getItem(`card${number}`));
         const gg = document.querySelector(".classnameInput");
         gg.value = card[2]["class"];
@@ -42,7 +43,7 @@ for(let i =0; i<btn_activ.length; i++){
         document.querySelector(".none").classList.add("background")
         document.querySelector(".shadow_pop").classList.toggle("_active")
         document.querySelector("body").classList.toggle("_active")
- } })
+ } )
 
 }
 
@@ -89,11 +90,21 @@ for(let i =0; i<input_check.length; i++){
                 }
             }
             console.log('opa')
-        } if(input_check[i].checked == true){
+        } 
+        let fix = document.querySelectorAll(`.${stats_fix[i].classList.toString().slice(10, 13)}`);
+        if(input_check[i].checked == true){
             localStorage.setItem('counter', localStorage.getItem('counter')-(-1)) ;
             stats_fix[i].textContent = stats_fix[i].textContent - (-3);
+            for(let j = 0; j<fix.length;j++ ){
+            fix[j].textContent = fix[j].textContent -(-3);
+            }
         }else{
+            // let fix = document.querySelectorAll(`.${stats_fix[i].classList.toString().slice(10, 13)}`);
             stats_fix[i].textContent = stats_fix[i].textContent -3;
+            for(let j = 0; j<fix.length ;j++ ){
+                fix[j].textContent = fix[j].textContent -3;
+                console.log("hello")
+            }
             localStorage.setItem('counter', localStorage.getItem('counter')-1)
             for(let j =0; j < input_check.length; j++){
                 if(input_check[j].checked == false){
