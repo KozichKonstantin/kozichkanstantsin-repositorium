@@ -1,6 +1,11 @@
 
 
-
+@font-face {
+    font-family: "Death"; 
+    src: url("./data/DEATHCROW.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
 body{
     margin: 0;
 }
@@ -32,7 +37,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: rgb(102, 99, 102);
+    background-color: rgb(46, 43, 46);
 }
 .name_case{
     display:flex;
@@ -49,9 +54,11 @@ header{
 .name_text > h1{
     display: flex;
     justify-content: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5em;
-    margin-top: 0;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: "Death";
+    color: rgb(212, 8, 8);
+    font-size: 4em;
+    margin-top: 5px;
     margin-bottom: 0;
 }
 .name_text > h2{
@@ -59,25 +66,44 @@ header{
     display: flex;
     justify-content: center;
     margin-top: -10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Death";
+    color: rgb(212, 8, 8);
+    font-size: 2em;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .logo_case{
     display: flex;
+    height: 100%;
     width: 100%;
     position: absolute;
     justify-content: right;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 30px;
     -webkit-transition: all 0.5s ease;
 }
-.logo{
+.logo_case > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
+    text-decoration: none;
+}
+a:hover > .logo{
+    box-shadow: 0px 0px 0px 5px rgb(65, 65, 65);
+}
+/* a:hover > .message{
+    box-shadow: 0px 5px 0px 0px rgb(65, 65, 65);
+} */
+.logo{
     margin-top: -0.6em;
    border-radius: 7px; 
    cursor: pointer;
-   background-color: rgb(40, 40, 40);
+   background-color: rgb(22, 21, 21);
    -webkit-transition: all 0.5s ease;
+   /* position: fixed; */
 }
+
 .logo:hover{
     box-shadow: 0px 0px 0px 5px rgb(8, 8, 8, 0.4);
 }
@@ -91,7 +117,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(151, 148, 132);
+    background-color: rgb(70, 62, 61);
 }
 .headSecondPage{
     height: 112px;
@@ -109,6 +135,7 @@ header{
     height: 80px;
     background-color: rgb(230, 72, 72);
     border-radius: 0 0 30% 30%;
+    font-family: "Death";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +146,7 @@ header{
     height: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: antiquewhite;
+    background-color: rgb(46, 43, 46);
     border-radius: 5px;
     border: 2px solid rgb(230, 72, 72) ;
 }
@@ -139,12 +166,15 @@ header{
     margin: 15px;
     width: 350px;
     height: 520px;
-    background-color: burlywood;
+    background-color: rgb(110, 74, 74);
     border-radius: 30px;
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .savedCardName{
     margin: 5px;
+}
+.savedCardName > h1{
+    font-family: "Death";
 }
 .savedCardPicture{
     margin: 5px;
@@ -164,7 +194,7 @@ header{
     height: 27%;
     grid-template-columns:  calc(100% / 3) calc(100% / 3) calc(100% / 3);
     grid-template-rows: calc(100%/2) calc(100%/2);
-    background-color: bisque;
+    background-color: rgb(44, 31, 31);
     border-radius: 20px;
     justify-content: space-around;
 }
@@ -173,12 +203,13 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(215, 194, 168);
+    background-color: rgb(163, 49, 49);
     margin: 5px;
     border-radius: 20px;
 }
 .specText > h2{
     font-size: 16px;
+    font-family: "Death";
 }
 .specText > p {
     font-size: 20px;
@@ -187,7 +218,7 @@ header{
     display: grid;
     width: 90%;
     height: 20%;
-    background-color: bisque;
+    background-color: rgb(44, 31, 31);
     margin-top: 5px;
     grid-template-columns:calc(100% / 3) calc(100% / 3) calc(100% / 3);
     border-radius: 20px;
@@ -197,7 +228,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(215, 194, 168);
+    background-color: rgb(163, 49, 49);
     margin: 5px;
     border-radius: 50%;
     -webkit-transition: all 0.5s ease;
