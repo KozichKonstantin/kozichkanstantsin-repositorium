@@ -238,7 +238,8 @@ a:hover > .logo{
     height: 60%;
 }
 .activityButton:hover{
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px rgba(190, 112, 112, 0.4);
 }
 footer{
     height: 70px;
@@ -269,7 +270,7 @@ footer{
     align-items: center;
     width: 950px;
     height: 850px;
-    background-color: burlywood;
+    background-color: rgba(59, 8, 8, 0.986);
     border-radius: 30px;
     position: fixed;
     top: calc(50% - 400px);
@@ -290,7 +291,7 @@ footer{
     width: 85%;
     height: 10%;
     border-radius: 30px;
-    background-color: bisque;
+    background-color: rgb(110, 74, 74);
     margin-bottom: 10px;
 }
 
@@ -303,11 +304,12 @@ footer{
     margin: 5px;
     width: 15%;
     border-radius: 30px;
-    background-color: burlywood;
+    background-color: rgb(163, 49, 49)
     
 }
 .Current > p{
     font-size: 20px;
+    font-family: "Death";
     margin-bottom: 2px;
 }
 .Current > input{
@@ -326,7 +328,7 @@ footer{
     height: 80%;
     width: 95%;
     border-radius: 30px;
-    background-color: bisque;
+    background-color: rgb(110, 74, 74);
 }
 .columnOne{
     display: flex;
@@ -336,7 +338,7 @@ footer{
     height: 95%;
     width: 30%;
     border-radius: 30px;
-    background-color: rgb(220, 238, 253);
+    background-color: rgb(68, 10, 10);
 }
 .mainSpecs{
     width: 40%;
@@ -346,7 +348,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0, 0.4);
-
+    font-family: "Death";
     margin-right: 5px;
     border-radius: 30px;
 }
@@ -357,7 +359,7 @@ footer{
     align-items: center;
     width: 90px;
     height: 90px;
-    background-color: aliceblue;
+    background-color: rgb(247, 153, 153);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 30%;
@@ -383,7 +385,7 @@ footer{
 .inspirationBox > .yesOrNo{
     width: 20px;
     height: 20px;
-    background-color: bisque;
+    background-color: rgb(240, 103, 69);
     border-radius: 50%;
     margin-right: 26px;
 }
@@ -394,6 +396,7 @@ footer{
     margin-right: 6px;
     margin-left: 5px;
     font-size: 12px;
+    
 }
 .savingBox{
     display: flex;
@@ -476,7 +479,7 @@ text-decoration: underline;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(248, 255, 236);
+    background-color: rgb(14, 12, 12);
     border-radius: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -506,7 +509,7 @@ text-decoration: underline;
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: bisque;
+    background-color: rgb(163, 49, 49);
 }
 .armorCube > input{
     width: 50px;
@@ -528,7 +531,7 @@ text-decoration: underline;
 .diceBox{
     width: 45%;
     height: 95%;
-    background-color: bisque;
+    background-color: rgb(163, 49, 49);
 }
 .diceBox >input{
     width: 90%;
@@ -624,7 +627,7 @@ text-decoration: underline;
     width: 25%;
     height: 95%;
     border-radius: 30px;
-    background-color: aliceblue;
+    background-color: rgb(68, 10, 10);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -678,14 +681,14 @@ text-decoration: underline;
   
 .close:hover {
 
-    background: burlywood;
-    border: 2px solid burlywood;
+    background: rgb(163, 49, 49);
+    border: 2px solid rgb(163, 49, 49);
 }
 
     .shadow_pop:hover .close{
 
-    background: burlywood;
-    border: 2px solid burlywood;
+    background: rgb(163, 49, 49);
+    border: 2px solid rgb(163, 49, 49);
 }
 
 .shadow_pop{

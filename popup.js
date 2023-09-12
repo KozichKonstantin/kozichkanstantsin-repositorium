@@ -63,12 +63,12 @@ document.querySelector(".shadow_pop").addEventListener('click', function() {
 
 
 function addHover() {
-    document.querySelector(".close").style.border = "2px solid burlywood";
-    document.querySelector(".close").style.backgroundColor = "burlywood";
+    document.querySelector(".close").style.border = "2px solid rgb(163, 49, 49)";
+    document.querySelector(".close").style.backgroundColor = "rgb(163, 49, 49)";
  }
  
  function removeHover() {
-    document.querySelector(".close").style.border = "2px solid burlywood";
+    document.querySelector(".close").style.border = "2px solid rgb(163, 49, 49)";
     document.querySelector(".close").style.backgroundColor ="transparent";
  }
  
