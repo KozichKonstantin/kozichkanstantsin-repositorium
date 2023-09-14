@@ -1,5 +1,5 @@
 let btn_activ = document.querySelectorAll(".reedFull") ;
-
+const input_check = document.querySelectorAll(".input_chek")
 
 
 for(let i =0; i<btn_activ.length; i++){
@@ -49,7 +49,7 @@ for(let i =0; i<btn_activ.length; i++){
 
 document.querySelector(".close").addEventListener('click', function() {
     
-    
+
     document.querySelector(".none").classList.remove("background");
     document.querySelector(".shadow_pop").classList.remove("_active");
     document.querySelector("body").classList.remove('_active');
@@ -59,6 +59,8 @@ document.querySelector(".shadow_pop").addEventListener('click', function() {
     document.querySelector(".none").classList.remove("background");
     document.querySelector(".shadow_pop").classList.remove("_active");
     document.querySelector("body").classList.remove('_active');
+
+
 })
 
 
@@ -77,7 +79,7 @@ function addHover() {
  document.querySelector(".shadow_pop").addEventListener('mouseenter', addHover);
 
 let nums = 0;
-const input_check = document.querySelectorAll(".input_chek")
+
 const stats_fix = document.querySelectorAll(".stats_fix")
 
 localStorage.setItem('counter', 0) ;
